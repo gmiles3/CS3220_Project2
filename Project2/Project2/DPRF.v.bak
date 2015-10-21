@@ -1,0 +1,134 @@
+module DPRF(clk, reset, we, regsel_dest, regsel_source0, regsel_source1, datain, dataout0, dataout1)
+	
+	wire[15:0] we_wire;
+	
+	assign we_wire = 1 << regsel_dest;
+	
+	wire[31:0] out[0:15];
+//	wire[31:0] reg1out;
+//	wire[31:0] reg2out;
+//	wire[31:0] reg3out;
+//	wire[31:0] reg4out;
+//	wire[31:0] reg5out;
+//	wire[31:0] reg6out;
+//	wire[31:0] reg7out;
+//	wire[31:0] reg8out;
+//	wire[31:0] reg9out;
+//	wire[31:0] reg10out;
+//	wire[31:0] reg11out;
+//	wire[31:0] reg12out;
+//	wire[31:0] reg13out;
+//	wire[31:0] reg14out;
+//	wire[31:0] reg15out;
+	
+//	Register reg0(clk, reset, we_wire[0], datain, reg0out);
+//	Register reg1(clk, reset, we_wire[1], datain, reg1out);
+//	Register reg2(clk, reset, we_wire[2], datain, reg2out);
+//	Register reg3(clk, reset, we_wire[3], datain, reg3out);
+//	Register reg4(clk, reset, we_wire[4], datain, reg4out);
+//	Register reg5(clk, reset, we_wire[5], datain, reg5out);
+//	Register reg6(clk, reset, we_wire[6], datain, reg6out);
+//	Register reg7(clk, reset, we_wire[7], datain, reg7out);
+//	Register reg8(clk, reset, we_wire[8], datain, reg8out);
+//	Register reg9(clk, reset, we_wire[9], datain, reg9out);
+//	Register reg10(clk, reset, we_wire[10], datain, reg10out);
+//	Register reg11(clk, reset, we_wire[11], datain, reg11out);
+//	Register reg12(clk, reset, we_wire[12], datain, reg12out);
+//	Register reg13(clk, reset, we_wire[13], datain, reg13out);
+//	Register reg14(clk, reset, we_wire[14], datain, reg14out);
+//	Register reg15(clk, reset, we_wire[15], datain, reg15out);
+//	
+//	always @(posedge clk) begin
+//		case(regsel_source0)
+//			(0):
+//				dataout0 = reg0out;
+//			(1):
+//				dataout0 = reg1out;
+//			(2):
+//				dataout0 = reg2out;
+//			(3):
+//				dataout0 = reg3out;
+//			(4):
+//				dataout0 = reg4out;
+//			(5):
+//				dataout0 = reg5out;
+//			(6):
+//				dataout0 = reg6out;
+//			(7):
+//				dataout0 = reg7out;
+//			(8):
+//				dataout0 = reg8out;
+//			(9):
+//				dataout0 = reg9out;
+//			(10):
+//				dataout0 = reg10out;
+//			(11):
+//				dataout0 = reg11out;
+//			(12):
+//				dataout0 = reg12out;
+//			(13):
+//				dataout0 = reg13out;
+//			(14):
+//				dataout0 = reg14out;
+//			(15):
+//				dataout0 = reg15out;
+//		endcase
+//		case(regsel_source1)
+//			(0):
+//				dataout1 = reg0out;
+//			(1):
+//				dataout1 = reg1out;
+//			(2):
+//				dataout1 = reg2out;
+//			(3):
+//				dataout1 = reg3out;
+//			(4):
+//				dataout1 = reg4out;
+//			(5):
+//				dataout1 = reg5out;
+//			(6):
+//				dataout1 = reg6out;
+//			(7):
+//				dataout1 = reg7out;
+//			(8):
+//				dataout1 = reg8out;
+//			(9):
+//				dataout1 = reg9out;
+//			(10):
+//				dataout1 = reg10out;
+//			(11):
+//				dataout1 = reg11out;
+//			(12):
+//				dataout1 = reg12out;
+//			(13):
+//				dataout1 = reg13out;
+//			(14):
+//				dataout1 = reg14out;
+//			(15):
+//				dataout1 = reg15out;
+//		endcase
+//		
+//	
+//	
+//
+
+	Register reg0(clk, reset, we_wire[0], datain, out[0]);
+	Register reg1(clk, reset, we_wire[1], datain, out[1]);
+	Register reg2(clk, reset, we_wire[2], datain, out[2]);
+	Register reg3(clk, reset, we_wire[3], datain, out[3]);
+	Register reg4(clk, reset, we_wire[4], datain, out[4]);
+	Register reg5(clk, reset, we_wire[5], datain, out[5]);
+	Register reg6(clk, reset, we_wire[6], datain, out[6]);
+	Register reg7(clk, reset, we_wire[7], datain, out[7]);
+	Register reg8(clk, reset, we_wire[8], datain, out[8]);
+	Register reg9(clk, reset, we_wire[9], datain, out[9]);
+	Register reg10(clk, reset, we_wire[10], datain, out[10]);
+	Register reg11(clk, reset, we_wire[11], datain, out[11]);
+	Register reg12(clk, reset, we_wire[12], datain, out[12]);
+	Register reg13(clk, reset, we_wire[13], datain, out[13]);
+	Register reg14(clk, reset, we_wire[14], datain, out[14]);
+	Register reg15(clk, reset, we_wire[15], datain, out[15]);
+	
+	assign dataout0 = out[regsel_source0];
+	assign dataout1 = out[regsel_source1];
+endmodule

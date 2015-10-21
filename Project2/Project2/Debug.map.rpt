@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Debug
-Wed Oct 21 14:53:59 2015
+Wed Oct 21 17:20:56 2015
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -49,7 +49,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 21 14:53:59 2015           ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 21 17:20:55 2015           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Debug                                           ;
 ; Top-level Entity Name              ; Project2                                        ;
@@ -162,21 +162,21 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                      ;
-+----------------------------------+-----------------+-----------------------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                   ; File Name with Absolute Path                                                   ; Library ;
-+----------------------------------+-----------------+-----------------------------+--------------------------------------------------------------------------------+---------+
-; InstMemory.v                     ; yes             ; User Verilog HDL File       ; C:/Users/Graham/Documents/CurrentClasses/CS3220/Project2/Project2/InstMemory.v ;         ;
-; Register.v                       ; yes             ; User Verilog HDL File       ; C:/Users/Graham/Documents/CurrentClasses/CS3220/Project2/Project2/Register.v   ;         ;
-; Project2.v                       ; yes             ; User Verilog HDL File       ; C:/Users/Graham/Documents/CurrentClasses/CS3220/Project2/Project2/Project2.v   ;         ;
-; PLL.v                            ; yes             ; User Wizard-Generated File  ; C:/Users/Graham/Documents/CurrentClasses/CS3220/Project2/Project2/PLL.v        ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf                   ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc               ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc              ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc            ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc            ;         ;
-+----------------------------------+-----------------+-----------------------------+--------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+-----------------------------+-----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                   ; File Name with Absolute Path                                                      ; Library ;
++----------------------------------+-----------------+-----------------------------+-----------------------------------------------------------------------------------+---------+
+; InstMemory.v                     ; yes             ; User Verilog HDL File       ; C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/InstMemory.v ;         ;
+; Register.v                       ; yes             ; User Verilog HDL File       ; C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/Register.v   ;         ;
+; Project2.v                       ; yes             ; User Verilog HDL File       ; C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/Project2.v   ;         ;
+; PLL.v                            ; yes             ; User Wizard-Generated File  ; C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/PLL.v        ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf                      ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                  ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc                 ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc               ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc               ;         ;
++----------------------------------+-----------------+-----------------------------+-----------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -214,13 +214,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                            ;
-+--------+--------------+---------+--------------+--------------+------------------------+-------------------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance        ; IP Include File                                                         ;
-+--------+--------------+---------+--------------+--------------+------------------------+-------------------------------------------------------------------------+
-; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |Project2|PLL:PLL_inst ; C:/Users/Graham/Documents/CurrentClasses/CS3220/Project2/Project2/PLL.v ;
-+--------+--------------+---------+--------------+--------------+------------------------+-------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                               ;
++--------+--------------+---------+--------------+--------------+------------------------+----------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance        ; IP Include File                                                            ;
++--------+--------------+---------+--------------+--------------+------------------------+----------------------------------------------------------------------------+
+; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |Project2|PLL:PLL_inst ; C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/PLL.v ;
++--------+--------------+---------+--------------+--------------+------------------------+----------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -723,7 +723,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Oct 21 14:53:53 2015
+    Info: Processing started: Wed Oct 21 17:20:51 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project2 -c Debug
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file instmemory.v
@@ -740,6 +740,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file pll.v
     Info (12023): Found entity 1: PLL
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
     Info (12023): Found entity 1: ALU
+Info (12021): Found 1 design units, including 1 entities, in source file dprf.v
+    Info (12023): Found entity 1: DPRF
+Info (12021): Found 1 design units, including 1 entities, in source file dprf_testbench.v
+    Info (12023): Found entity 1: dprf_testbench
 Warning (10236): Verilog HDL Implicit Net warning at Project2.v(69): created implicit net for "rd1"
 Info (12127): Elaborating entity "Project2" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at Project2.v(69): object "rd1" assigned a value but never read
@@ -890,8 +894,8 @@ Info (21057): Implemented 61 device resources after synthesis - the final resour
     Info (21059): Implemented 46 output pins
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 82 warnings
     Info: Peak virtual memory: 445 megabytes
-    Info: Processing ended: Wed Oct 21 14:53:59 2015
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Processing ended: Wed Oct 21 17:20:56 2015
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:03
 
 
