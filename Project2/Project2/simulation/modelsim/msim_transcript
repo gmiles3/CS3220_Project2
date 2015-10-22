@@ -1,6 +1,5 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# ERROR: No extended dataflow license exists
-# do Debug_run_msim_rtl_verilog.do 
+# do Project2_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -11,44 +10,29 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2 {C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/InstMemory.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module InstMemory
-# 
-# Top level modules:
-# 	InstMemory
-# vlog -vlog01compat -work work +incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2 {C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/Register.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Register
-# 
-# Top level modules:
-# 	Register
-# vlog -vlog01compat -work work +incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2 {C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/Project2.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2 {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2/Project2.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Project2
 # 
 # Top level modules:
 # 	Project2
-# vlog -vlog01compat -work work +incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2 {C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/PLL.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2 {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2/PLL.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module PLL
 # 
 # Top level modules:
 # 	PLL
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2 {C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/dprf_testbench.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2 {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2/register.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module dprf_testbench
+# -- Compiling module Register
 # 
 # Top level modules:
-# 	dprf_testbench
+# 	Register
+# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2 {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2/instmemory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module InstMemory
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  dprf_testbench.v
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps dprf_testbench.v 
-# ** Error: (vsim-19) Failed to access library 'dprf_testbench' at "dprf_testbench".
+# Top level modules:
+# 	InstMemory
 # 
-# No such file or directory. (errno = ENOENT)
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./Debug_run_msim_rtl_verilog.do PAUSED at line 15
+# ERROR: No extended dataflow license exists
