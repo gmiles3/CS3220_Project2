@@ -2,150 +2,150 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\Graham\Documents\CurrentClasses\CS3220\p2\Project2\Project2\simulation\modelsim
+Z0 dC:\Users\Fawks\Documents\cs3220\Project2\Project2\simulation\modelsim
 vALU
-ICIO1>icjL>Li:GJil4CDC2
+IebR0Bg;J34OWGkQmzk;WA3
 Vmnbj<4XTj9ZnSS632zTLH3
-Z1 dC:\Users\Graham\Documents\CurrentClasses\CS3220\p2\Project2\Project2\simulation\modelsim
-w1445566481
-8C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/ALU.v
-FC:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/ALU.v
+Z1 dC:\Users\Fawks\Documents\cs3220\Project2\Project2\simulation\modelsim
+Z2 w1445619483
+8C:/Users/Fawks/Documents/cs3220/Project2/Project2/ALU.v
+FC:/Users/Fawks/Documents/cs3220/Project2/Project2/ALU.v
 L0 1
-Z2 OV;L;10.1d;51
+Z3 OV;L;10.1d;51
 r1
 31
-Z3 o-vlog01compat -work work -O0
-Z4 !s92 -vlog01compat -work work +incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2 -O0
+Z4 o-vlog01compat -work work -O0
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2 -O0
 n@a@l@u
 !i10b 1
-!s100 3:QVF^hmoD8;YKJ4kMm9h0
+!s100 Ha;A`3n4<GjdMB06[IbnN2
 !s85 0
-!s108 1445566713.426000
-!s107 C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/ALU.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2|C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/ALU.v|
+!s108 1445622479.940000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/Project2/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2|C:/Users/Fawks/Documents/cs3220/Project2/Project2/ALU.v|
 !s101 -O0
 valu_testbench
 !i10b 1
-!s100 4S9hH=BM;XmSoTF?iEQGG0
-IOEiRFJFA9YmP3Q>Q4ABJS0
+!s100 z:069Nd5SF1GB;Bc<i:Ij0
+I]NLC6TIno:n73@SleBR3F1
 VJKcNAdbTBPa4:gYL^h3mz1
 R1
-w1445566663
-8C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/alu_testbench.v
-FC:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/alu_testbench.v
+w1445622464
+8C:/Users/Fawks/Documents/cs3220/Project2/Project2/alu_testbench.v
+FC:/Users/Fawks/Documents/cs3220/Project2/Project2/alu_testbench.v
 L0 27
-R2
+R3
 r1
 !s85 0
 31
-!s108 1445566714.646000
-!s107 C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/alu_testbench.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2|C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/alu_testbench.v|
+!s108 1445622480.674000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/Project2/alu_testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2|C:/Users/Fawks/Documents/cs3220/Project2/Project2/alu_testbench.v|
 !s101 -O0
-R3
 R4
+R5
 vDPRF
-IDQGnUT0[EH7C;R6`J`Fj^2
+IA:aX^X?czlG@o:T>ZPIQL2
 VKg<U;5QPbRJLQ:52zBX]c3
 R1
-w1445563064
-8C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/DPRF.v
-FC:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/DPRF.v
-L0 1
 R2
+8C:/Users/Fawks/Documents/cs3220/Project2/Project2/DPRF.v
+FC:/Users/Fawks/Documents/cs3220/Project2/Project2/DPRF.v
+L0 1
+R3
 r1
 31
-R3
-n@d@p@r@f
 R4
+n@d@p@r@f
+R5
 !i10b 1
-!s100 fLi?zbY_5^JZ2D>IjXCMD0
+!s100 DP_NaSPBXH;_JI4DHZm7I3
 !s85 0
-!s108 1445566713.207000
-!s107 C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/DPRF.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2|C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/DPRF.v|
+!s108 1445622479.799000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/Project2/DPRF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2|C:/Users/Fawks/Documents/cs3220/Project2/Project2/DPRF.v|
 !s101 -O0
 vInstMemory
-Im^l07HWf^hWz@hn<GCEJ`3
+I2P9E9:1@gId4nQ_dXbRFN1
 VUJYb>IZO9F_mPNHYd`^832
 R1
-Z5 w1445201821
-8C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/instmemory.v
-FC:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/instmemory.v
-L0 1
 R2
+8C:/Users/Fawks/Documents/cs3220/Project2/Project2/instmemory.v
+FC:/Users/Fawks/Documents/cs3220/Project2/Project2/instmemory.v
+L0 1
+R3
 r1
 31
-R3
 R4
+R5
 n@inst@memory
 !i10b 1
-!s100 ;zBQXfc[a2ZjSAczcJ:7;2
+!s100 ?cHE:io7O7cnQB`?_FN7B0
 !s85 0
-!s108 1445566714.381000
-!s107 C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/instmemory.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2|C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/instmemory.v|
+!s108 1445622480.503000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/Project2/instmemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2|C:/Users/Fawks/Documents/cs3220/Project2/Project2/instmemory.v|
 !s101 -O0
 vPLL
-Ij:hCZInBH56F]JBhiOjJH3
+Ic5Ej=j<IdUW;AHjaC00[^2
 VcRJBAi;iBH4]@Zh9O[[o60
 R1
-R5
-8C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/PLL.v
-FC:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/PLL.v
-L0 39
 R2
+8C:/Users/Fawks/Documents/cs3220/Project2/Project2/PLL.v
+FC:/Users/Fawks/Documents/cs3220/Project2/Project2/PLL.v
+L0 39
+R3
 r1
 31
-R3
 R4
+R5
 n@p@l@l
 !i10b 1
-!s100 ?QF;m3P9H473gMYIAn_e:0
+!s100 9F[_nM6C6kmnKBgNBaAXK0
 !s85 0
-!s108 1445566713.863000
-!s107 C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/PLL.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2|C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/PLL.v|
+!s108 1445622480.221000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/Project2/PLL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2|C:/Users/Fawks/Documents/cs3220/Project2/Project2/PLL.v|
 !s101 -O0
 vProject2
-I_<g9L0DiFh3@[hcB2]iXY1
+IIB]@zV;dXHe9kHUT4@F@i2
 V?c^;LMNeWVaF[k>7O=^B?3
 R1
-w1445565030
-8C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/Project2.v
-FC:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/Project2.v
-L0 1
 R2
+8C:/Users/Fawks/Documents/cs3220/Project2/Project2/Project2.v
+FC:/Users/Fawks/Documents/cs3220/Project2/Project2/Project2.v
+L0 1
+R3
 r1
 31
-R3
 R4
+R5
 n@project2
 !i10b 1
-!s100 m];az_d7Td1zQUJX4:PG03
+!s100 9RfO7WYF>BVf7GI6h?PKd3
 !s85 0
-!s108 1445566713.629000
-!s107 C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/Project2.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2|C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/Project2.v|
+!s108 1445622480.096000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/Project2/Project2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2|C:/Users/Fawks/Documents/cs3220/Project2/Project2/Project2.v|
 !s101 -O0
 vRegister
-I0bR0ma1KPY:1f[G>7?6963
+I9ilPl>]`1D_aAYT;cfU]:3
 VcF=KTBfmNkUbE2U153[EE2
 R1
-w1445201822
-8C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/register.v
-FC:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/register.v
-L0 1
 R2
+8C:/Users/Fawks/Documents/cs3220/Project2/Project2/register.v
+FC:/Users/Fawks/Documents/cs3220/Project2/Project2/register.v
+L0 1
+R3
 r1
 31
-R3
 R4
+R5
 n@register
 !i10b 1
-!s100 U;o18Ik`7d];H5Aeh^Fg=0
+!s100 WY^GgTL0U?D5[l9o2gi423
 !s85 0
-!s108 1445566714.146000
-!s107 C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/register.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2|C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/register.v|
+!s108 1445622480.362000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/Project2/register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2|C:/Users/Fawks/Documents/cs3220/Project2/Project2/register.v|
 !s101 -O0

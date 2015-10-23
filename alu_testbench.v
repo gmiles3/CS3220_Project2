@@ -29,6 +29,7 @@ module alu_testbench;
 	reg clk;
 	reg[3:0] opsel;
 	reg[31:0] A, B;
+	reg signed[31:0] Expected;
 	wire signed[31:0] out;
 	parameter ADD=0, SUB=1, AND=2, OR=3, XOR=4, NAND=5, NOR=6, XNOR=7, MVHI=8;
 	
@@ -44,46 +45,37 @@ module alu_testbench;
 	end
 
 	always
-		#5 clk = !clk;
+		#100 clk = !clk;
 		
 	initial begin
 		#100;
+		$monitor("%0t\tClk: %d\tOpsel: %d\tA: %d\tB: %d\tExpected: %d\tOut: %d", $time, clk, opsel, A, B, Expected, out);
 		A = 20;
-		#100;
 		B = 17;
-		#100;
+		Expected = 37;
 		opsel = ADD;
-		#100;
-		$display("Add: 20 + 17 = 37 (%d)\n", out);
-		#100;
+		#200;
+		Expected = 3;
 		opsel = SUB;
-		#100;
-		$display("Sub: 20 - 17 = 3 (%d)\n", out);
-		#100;
+		#200;
+		Expected = 21;
 		opsel = OR;
-		#100;
-		$display("Or: 20 | 17 = 21 (%d)\n", out);
-		#100;
+		#200;
+		Expected = 5;
 		opsel = XOR;
-		#100;
-		$display("Xor: 20 ^ 17 = 5 (%d)\n", out);
-		#100;
+		#200;
+		Expected = -17;
 		opsel = NAND;
-		#100;
-		$display("Nand: ~(20 & 17) = -17 (%d)\n", out);
-		#100;
+		#200;
+		Expected = -22;
 		opsel = NOR;
-		#100;
-		$display("Nor: ~(20 | 17) = -22 (%d)\n", out);
-		#100;
+		#200;
+		Expected = -6;
 		opsel = XNOR;
-		#100;
-		$display("Xnor: ~(20 ^ 17) = -6 (%d)\n", out);
-		#100;
+		#200;
+		Expected = 1179642;
 		opsel = MVHI;
-		#100;
-		$display("MVHI: out[31:16] <-- b[15:0] = 1179642 (%d)\n", out);
-		#100;	
+		#200 $finish;
 	end
       
 endmodule
