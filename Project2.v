@@ -55,38 +55,27 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   wire[IMEM_DATA_BIT_WIDTH - 1: 0] instWord;
   InstMemory #(IMEM_INIT_FILE, IMEM_ADDR_BIT_WIDTH, IMEM_DATA_BIT_WIDTH) instMem (pcOut[IMEM_PC_BITS_HI - 1: IMEM_PC_BITS_LO], instWord);
 	  
-	wire[31:0]	iword;
-	wire[3:0]	rd,	rs1,	rs2;
-	wire[15:0]	imm;
-	wire[3:0]	fn;
-	wire[3:0]	opcode;	
-  
-   assign	opcode	=	instWord[3:0];
-	assign	fn	= instWord[7:4];
-	assign	imm	=	instWord[23:8];
-	assign	rs2	=	instWord[23:20];
-	assign	rs1	=	instWord[27:24];
-	assign	rd1	=	instWord[31:28];	
-  // Put the code for getting opcode1, rd, rs, rt, imm, etc. here 
+	wire[3:0] func, opcode, rd, rs1, rs2, key;
+	wire[7:0] ledg;
+	wire[9:0] sw, ledr;
+	wire[15:0] imm, hex;
+	wire ctrl_br, ctrl_mem_read, ctrl_mem_reg, ctrl_alu_op, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write;
+	
+	wire[31:0] reg_write_data, reg_read_data1, reg_read_data2, alu_result, mem_read_data;
+	
+  // Put the code for getting opcode1, rd, rs, rt, imm, etc. here
+  Controller controller(clk, opcode, func, rs2, rs1, rd, ctrl_br, ctrl_mem_read, ctrl_mem_reg, ctrl_alu_op, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write);
   
   // Create the registers
-  wire we;
-  wire[3:0] regsel_dest, regsel_source0, regsel_source1;
-  wire[31:0] datain;
-  wire[31:0] dataout0;
-  wire[31:0] dataout1;
-	wire[3:0] opsel;
-	wire[31:0] A, B, out;
-
-  DPRF dprf(clk, reset, we, regsel_dest, regsel_source0, regsel_source1, datain, dataout0, dataout1);
-  
-  ALU alu(clk, opsel, A, B, out);
+  DPRF dprf(clk, reset, ctrl_reg_write, rd, rs1, rs2, reg_write_data, reg_read_data1, reg_read_data2);
   
   // Create ALU unit
+  // alu_source = (ctrl_alu_src) ? (sign extended imm) : reg_read_data2;
+  ALU alu(clk, instWord[7:4], reg_read_data1, reg_read_data2, alu_result);
   
   // Put the code for data memory and I/O here
+  DataMemory #(IMEM_INIT_FILE) datamem(clk, ctrl_mem_write, alu_result, reg_read_data2, sw, key, ledr, ledg, hex, mem_read_data);
   
   // KEYS, SWITCHES, HEXS, and LEDS are memeory mapped IO
-    
 endmodule
 
