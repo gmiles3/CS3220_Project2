@@ -1,4 +1,5 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
 # do Project2_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -10,49 +11,54 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2 {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2/DPRF.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2 {C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/DPRF.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module DPRF
 # 
 # Top level modules:
 # 	DPRF
-# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2 {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2/Project2.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2 {C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# vlog -vlog01compat -work work +incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2 {C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/Project2.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Project2
 # 
 # Top level modules:
 # 	Project2
-# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2 {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2/PLL.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2 {C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/PLL.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module PLL
 # 
 # Top level modules:
 # 	PLL
-# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2 {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2/register.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2 {C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/register.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Register
 # 
 # Top level modules:
 # 	Register
-# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2 {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2/instmemory.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2 {C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/instmemory.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module InstMemory
 # 
 # Top level modules:
 # 	InstMemory
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2 {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2/Project2/dprf_testbench.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2 {C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/alu_testbench.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module dprf_testbench
+# -- Compiling module alu_testbench
 # 
 # Top level modules:
-# 	dprf_testbench
+# 	alu_testbench
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  dprf_testbench
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps dprf_testbench 
-# Loading work.dprf_testbench
-# Loading work.DPRF
-# Loading work.Register
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  alu_testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps alu_testbench 
+# Loading work.alu_testbench
+# Loading work.ALU
 # 
 # add wave *
 # view structure
@@ -60,9 +66,21 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Dataout0:          x
-#  Dataout1:          x
+# Add 20 + 17 = 37 (         37)
 # 
-# Dataout0:         30
-#  Dataout1:          x
+# Sub 20 - 17 = 3 (          3)
 # 
+# Or 20 | 17 = 21 (         21)
+# 
+# Xor 20 ^ 17 = 5 (          5)
+# 
+# Nand ~(20 & 17) = -17 (        -17)
+# 
+# Nor ~(20 | 17) = -22 (        -22)
+# 
+# Xnor ~(20 ^ 17) = -6 (         -6)
+# 
+# MVHI out[31:16] <-- b[15:0] = 1179642 (    1179642)
+# 
+# Break key hit 
+# Break in Module alu_testbench at C:/Users/Graham/Documents/CurrentClasses/CS3220/p2/Project2/Project2/alu_testbench.v line 47

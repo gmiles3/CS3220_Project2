@@ -75,10 +75,12 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   wire[31:0] datain;
   wire[31:0] dataout0;
   wire[31:0] dataout1;
+	wire[3:0] opsel;
+	wire[31:0] A, B, out;
 
-  wire[15:0] we_wire;
-  wire[31:0] out[0:15];
   DPRF dprf(clk, reset, we, regsel_dest, regsel_source0, regsel_source1, datain, dataout0, dataout1);
+  
+  ALU alu(clk, opsel, A, B, out);
   
   // Create ALU unit
   
