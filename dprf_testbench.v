@@ -50,26 +50,21 @@ module dprf_testbench;
 		
 	initial begin
 		#100;
+		$monitor("%0t\tclk: %d\treset: %d\twe: %d\treg_dst: %d\treg_a: %d\treg_b: %d\tdata_in: %d\tout_a: %d\tout_b: %d", $time, clk, reset, we, regsel_dest, regsel_source0, regsel_source1, datain, dataout0, dataout1);
+
 		datain = 30;
-		#100;
 		regsel_dest = 3;
-		#100;
 		we = 1;
 		#100;
 		we = 0;
 		#100;
 		regsel_dest = 10;
-		#100;
 		datain = 100;
 		#100;
 		regsel_source0 = 3;
 		#100;
 		regsel_source1 = 10;
 		#100;
-	end
-		
-	initial begin
-		$monitor("Dataout0: %d\n Dataout1: %d\n", dataout0, dataout1);
 	end
       
 endmodule
