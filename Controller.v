@@ -4,7 +4,7 @@ module Controller(clk, opcode, func, ctrl_alu_op, ctrl_reg_src, ctrl_br, ctrl_me
 	input clk;
 	input[3:0] opcode, func;
 	output reg[5:0] ctrl_alu_op;
-	output reg ctrl_reg_src, ctrl_br, ctrl_mem_read, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write;
+	output ctrl_reg_src, ctrl_br, ctrl_mem_read, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write;
 	
 	reg[6:0] ctrl_out;
 	
