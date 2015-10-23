@@ -6,10 +6,11 @@ module DPRF(clk, reset, we, regsel_dest, regsel_source0, regsel_source1, datain,
 	output[31:0] dataout1;
 	
 	wire[15:0] we_wire;
-	
-	assign we_wire = 1 << regsel_dest;
-	
 	wire[31:0] out[0:15];
+	
+	assign we_wire = we << regsel_dest;
+	assign dataout0 = out[regsel_source0];
+	assign dataout1 = out[regsel_source1];
 
 	Register reg0(clk, reset, we_wire[0], datain, out[0]);
 	Register reg1(clk, reset, we_wire[1], datain, out[1]);
@@ -27,7 +28,4 @@ module DPRF(clk, reset, we, regsel_dest, regsel_source0, regsel_source1, datain,
 	Register reg13(clk, reset, we_wire[13], datain, out[13]);
 	Register reg14(clk, reset, we_wire[14], datain, out[14]);
 	Register reg15(clk, reset, we_wire[15], datain, out[15]);
-	
-	assign dataout0 = out[regsel_source0];
-	assign dataout1 = out[regsel_source1];
 endmodule

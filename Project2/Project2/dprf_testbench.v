@@ -24,7 +24,6 @@
 
 
 `timescale 1ns / 1ps
-
 module dprf_testbench;
 
 	reg clk, reset, we;
@@ -35,6 +34,16 @@ module dprf_testbench;
 
 	// Instantiate the Unit Under Test
 	DPRF dprf(clk, reset, we, regsel_dest, regsel_source0, regsel_source1, datain, dataout0, dataout1);
+	
+	initial begin
+		clk = 0;
+		reset = 0;
+		we = 0;
+		regsel_dest = 0;
+		regsel_source0 = 0;
+		regsel_source1 = 0;
+		datain = 0;
+	end
 
 	always
 		#5 clk = !clk;

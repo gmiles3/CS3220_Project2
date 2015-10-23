@@ -66,13 +66,19 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	assign	imm	=	instWord[23:8];
 	assign	rs2	=	instWord[23:20];
 	assign	rs1	=	instWord[27:24];
-	assign	rd1	=	instWord[31:28];
-	
-	
-	
+	assign	rd1	=	instWord[31:28];	
   // Put the code for getting opcode1, rd, rs, rt, imm, etc. here 
   
   // Create the registers
+  wire we;
+  wire[3:0] regsel_dest, regsel_source0, regsel_source1;
+  wire[31:0] datain;
+  wire[31:0] dataout0;
+  wire[31:0] dataout1;
+
+  wire[15:0] we_wire;
+  wire[31:0] out[0:15];
+  DPRF dprf(clk, reset, we, regsel_dest, regsel_source0, regsel_source1, datain, dataout0, dataout1);
   
   // Create ALU unit
   
