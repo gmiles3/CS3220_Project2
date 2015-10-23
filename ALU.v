@@ -9,89 +9,89 @@ module ALU(clk, opsel, A, B, out);
 	always @(posedge clk) begin
 		case (opsel)
 			BF:
-				out = 0;
+				out <= 0;
 			BEQ:
 				if (A == B) 
-					out = 1;
+					out <= 1;
 				else
-					out = 0;
+					out <= 0;
 			BLT:
 				if (A << B)
-					out = 1;
+					out <= 1;
 				else
-					out = 0;
+					out <= 0;
 			BLTE:
 				if (A <= B) 
-					out = 1;
+					out <= 1;
 				else
-					out = 0;
+					out <= 0;
 			BEQZ:
 				if (A == 0)
-					out = 1;
+					out <= 1;
 				else
-					out = 0;
+					out <= 0;
 			BLTZ:
 				if (A << 0)
-					out = 1;
+					out <= 1;
 				else
-					out = 0;
+					out <= 0;
 			BLTEZ:
 				if (A <= 0)
-					out = 1;
+					out <= 1;
 				else
-					out = 0;
+					out <= 0;
 			BT:
-				out = 1;
+				out <= 1;
 			BNE:
 				if (A == B)
-					out = 0;
+					out <= 0;
 				else
-					out = 1;
+					out <= 1;
 			BGTE:
 				if (A >= B)
-					out = 1;
+					out <= 1;
 				else
-					out = 0;
+					out <= 0;
 			BGT:
 				if (A >> B)
-					out = 1;
+					out <= 1;
 				else
-					out = 0;
+					out <= 0;
 			BNEZ:
 				if (A == 0)
-					out = 0;
+					out <= 0;
 				else
-					out = 1;
+					out <= 1;
 			BGTEZ:
 				if (A >= 0)
-					out = 1;
+					out <= 1;
 				else
-					out = 0;
+					out <= 0;
 			BGTZ:
 				if (A >> 0)
-					out = 1;
+					out <= 1;
 				else
-					out = 0;
+					out <= 0;
 			ADD: 
-				out = A + B;
+				out <= A + B;
 			SUB:
-				out = A - B;
+				out <= A - B;
 			JALR:
-				out = A + (B*4);
+				out <= A + (B*4);
 			AND:
-				out = A & B;
+				out <= A & B;
 			OR:
-				out = A | B;
+				out <= A | B;
 			XOR:
-				out = A ^ B;
+				out <= A ^ B;
 			NAND:
-				out = ~(A & B);
+				out <= ~(A & B);
 			NOR:
-				out = ~(A | B);
+				out <= ~(A | B);
 			XNOR:
-				out = ~(A ^ B);
+				out <= ~(A ^ B);
 			MVHI:
-				out[31:16] = B[15:0];
+				out[31:16] <= B[15:0];
 		endcase
 	end
 endmodule
