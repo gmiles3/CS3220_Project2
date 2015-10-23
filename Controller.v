@@ -1,11 +1,11 @@
-module Controller(clk, instWord, opcode, func, rs2, rs1, rd, ctrl_br, ctrl_mem_read, ctrl_mem_reg, ctrl_alu_op, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write);
-	parameter ALUR=0, ALUI=8, LW=9, SW=5, CMPR=2, CMPI=10, BRANCH=6, JAL=11
+module Controller(clk, instWord, opcode, func, rs2, rs1, rd, ctrl_br, ctrl_mem_read, ctrl_mem_reg, ctrl_alu_op, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write, imm);
+	parameter ALUR=0, ALUI=8, LW=9, SW=5, CMPR=2, CMPI=10, BRANCH=6, JAL=11;
 	
 	input clk;
 	input[31:0] instWord;
-	output reg[15:0] imm;
-	output reg[3:0] opcode, func, rs2, rs1, rd;
-	output reg ctrl_br, ctrl_mem_read, ctrl_mem_reg, ctrl_alu_op, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write;
+	output[15:0] imm;
+	output[3:0] opcode, func, rs2, rs1, rd;
+	output ctrl_br, ctrl_mem_read, ctrl_mem_reg, ctrl_alu_op, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write;
 	
 	wire[3:0] a, b, c;
 	wire[6:0] ctrl_out;

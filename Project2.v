@@ -64,14 +64,14 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	wire[31:0] reg_write_data, reg_read_data1, reg_read_data2, alu_result, mem_read_data;
 	
   // Put the code for getting opcode1, rd, rs, rt, imm, etc. here
-  Controller controller(clk, opcode, func, rs2, rs1, rd, ctrl_br, ctrl_mem_read, ctrl_mem_reg, ctrl_alu_op, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write);
+  Controller controller(clk, opcode, func, rs2, rs1, rd, ctrl_br, ctrl_mem_read, ctrl_mem_reg, ctrl_alu_op, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write, imm);
   
   // Create the registers
   DPRF dprf(clk, reset, ctrl_reg_write, rd, rs1, rs2, reg_write_data, reg_read_data1, reg_read_data2);
   
   // Create ALU unit
   // alu_source = (ctrl_alu_src) ? (sign extended imm) : reg_read_data2;
-  ALU alu(clk, instWord[7:4], reg_read_data1, reg_read_data2, alu_result);
+  ALU alu(clk, instWord[9:4], reg_read_data1, reg_read_data2, alu_result);
   
   // Put the code for data memory and I/O here
   DataMemory #(IMEM_INIT_FILE) datamem(clk, ctrl_mem_write, alu_result, reg_read_data2, sw, key, ledr, ledg, hex, mem_read_data);
