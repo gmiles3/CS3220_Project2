@@ -1,0 +1,3 @@
+module Controller(instWord, imm, rd, rs1, rs2, ctrl_br, ctrl_mem_read, ctrl_mem_reg, ctrl_alu_op, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write);
+
+endmodule
