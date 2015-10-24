@@ -1,0 +1,17 @@
+.NAME   IOBASE= 0xF0000000
+.NAME	OFSHEX= 0x00000000
+.NAME	OFSLEDR=0x00000004
+.NAME	OFSLEDG=0x00000008
+
+    .ORIG 0x40
+AtZero:
+    ; Display 0xFF on LEDG
+    mvhi	gp,IOBASE
+    andi	s0,s0,0
+    addi	t0,s0,0xFF
+    sw		t0,OFSLEDG(gp)
+; Display 0xFACE on HEX
+    andi	s0,s0,0
+    addi	t0,s0,0xFACE
+    sw		t0,OFSHEX(gp)
+    bt		t0,t0,AtZero

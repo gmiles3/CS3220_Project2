@@ -17,7 +17,7 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   parameter ADDR_LEDR 					 = 32'hF0000004;
   parameter ADDR_LEDG 					 = 32'hF0000008;
   
-  parameter IMEM_INIT_FILE				 = "Sorter2.mif";
+  parameter IMEM_INIT_FILE				 = "LightTest.mif";
   parameter IMEM_ADDR_BIT_WIDTH 		 = 11;
   parameter IMEM_DATA_BIT_WIDTH 		 = INST_BIT_WIDTH;
   parameter IMEM_PC_BITS_HI     		 = IMEM_ADDR_BIT_WIDTH + 2;
@@ -37,7 +37,7 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   
   // Create PC and its logic
   wire pcWrtEn = 1'b1;
-  wire[DBITS - 1: 0] pcIn; // Implement the logic that generates pcIn; you may change pcIn to reg if necessary
+  reg[DBITS - 1: 0] pcIn; // Implement the logic that generates pcIn; you may change pcIn to reg if necessary
   wire[DBITS - 1: 0] pcOut;
   
   // This PC instantiation is your starting point
@@ -52,23 +52,27 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	wire[9:0] sw, ledr;
 	wire[15:0] imm, hex;
 	wire[5:0] ctrl_alu_op;
-	wire ctrl_reg_src, ctrl_br, ctrl_mem_read, ctrl_mem_reg, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write;
+	wire ctrl_reg_src, ctrl_br, ctrl_mem_read, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write;
 	
-	wire[31:0] reg_write_data, reg_read_data1, reg_read_data2, alu_result, mem_read_data;
+	wire[31:0] reg_write_data, reg_read_data1, reg_read_data2, alu_source, alu_result, mem_read_data;
 	
 	assign func = instWord[7:4];
 	assign opcode = instWord[3:0];
-	assign rd = (opcode == 11) ? (pcOut + 4) : instWord[31:28];
+	assign rd = (opcode == 4'd11) ? (pcOut + INST_SIZE) : instWord[31:28];
 	assign rs1 = ctrl_reg_src ? instWord[31:28] : instWord[27:24];
 	assign rs2 = ctrl_reg_src ? instWord[27:24] : instWord[23:19];
 	assign imm = ((instWord[23] ? -1 : 0) << 16) + instWord[23:8];
+	assign reg_write_data = (ctrl_mem_read) ? mem_read_data : alu_result;
+	assign alu_source = ctrl_alu_src ? imm : reg_read_data2;
 	
-	assign pcIn = (opcode == 11) ? (reg_read_data1 + (4 * imm)) : (pcOut + 4 + ((ctrl_br && alu_result) ? (imm * 4) : 0));
-	
-	assign sw = SW;
-	assign key = KEY;
-	assign LEDR = ledr;
-	assign LEDG = ledg;
+	always @(posedge clk) begin
+		if (opcode == 4'd11)
+			pcIn <= reg_read_data1 + (imm * 4);
+		else if (ctrl_br && alu_result)
+			pcIn <= pcOut + INST_SIZE + (imm * 4);
+		else
+			pcIn <= pcOut + INST_SIZE;
+	end
 	
 	SevenSeg hex0(hex[3:0], HEX0);
 	SevenSeg hex1(hex[7:4], HEX1);
@@ -82,11 +86,10 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   DPRF dprf(clk, reset, ctrl_reg_write, rd, rs1, rs2, reg_write_data, reg_read_data1, reg_read_data2);
   
   // Create ALU unit
-  // alu_source = (ctrl_alu_src) ? (sign extended imm) : reg_read_data2;
-  ALU alu(clk, ctrl_alu_op, reg_read_data1, reg_read_data2, alu_result);
+  ALU alu(clk, ctrl_alu_op, reg_read_data1, alu_source, alu_result);
   
   // Put the code for data memory and I/O here
   // KEYS, SWITCHES, HEXS, and LEDS are memeory mapped IO
-  DataMemory #(IMEM_INIT_FILE) datamem(clk, ctrl_mem_write, alu_result, reg_read_data2, sw, key, ledr, ledg, hex, mem_read_data);
+  DataMemory #(IMEM_INIT_FILE) datamem(clk, ctrl_mem_write, alu_result, reg_read_data2, SW, KEY, LEDR, LEDG, hex, mem_read_data);
 endmodule
 

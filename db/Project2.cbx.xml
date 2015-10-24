@@ -1,5 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="Project2">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Project2|Controller:controller|altsyncram:WideOr0_rtl_0" CBX_FILE_NAME="altsyncram_mgv.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Project2|DataMemory:datamem|altsyncram:data_rtl_0" CBX_FILE_NAME="altsyncram_bq61.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
