@@ -66,12 +66,12 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	
 	assign func = instWord[7:4];
 	assign opcode = instWord[3:0];
-	assign rd = instWord[31:28];
+	assign rd = (opcode == 11) ? (pcOut + 4) : instWord[31:28];
 	assign rs1 = ctrl_reg_src ? instWord[31:28] : instWord[27:24];
 	assign rs2 = ctrl_reg_src ? instWord[27:24] : instWord[23:19];
 	assign imm = ((instWord[23] ? -1 : 0) << 16) + instWord[23:8];
 	
-	assign pcIn = pcOut + 4 + ((ctrl_br && alu_result) ? (imm * 4) : 0);
+	assign pcIn = (opcode == 11) ? (reg_read_data1 + (4 * imm)) : (pcOut + 4 + ((ctrl_br && alu_result) ? (imm * 4) : 0));
 	
   // Put the code for getting opcode1, rd, rs, rt, imm, etc. here
   Controller controller(clk, opcode, func, ctrl_alu_op, ctrl_reg_src, ctrl_br, ctrl_mem_read, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write);
@@ -81,11 +81,10 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   
   // Create ALU unit
   // alu_source = (ctrl_alu_src) ? (sign extended imm) : reg_read_data2;
-  ALU alu(clk, instWord[7:4], reg_read_data1, reg_read_data2, alu_result);
+  ALU alu(clk, func, reg_read_data1, reg_read_data2, alu_result);
   
   // Put the code for data memory and I/O here
-  DataMemory #(IMEM_INIT_FILE) datamem(clk, ctrl_mem_write, alu_result, reg_read_data2, sw, key, ledr, ledg, hex, mem_read_data);
-  
   // KEYS, SWITCHES, HEXS, and LEDS are memeory mapped IO
+  DataMemory #(IMEM_INIT_FILE) datamem(clk, ctrl_mem_write, alu_result, reg_read_data2, sw, key, ledr, ledg, hex, mem_read_data);
 endmodule
 
