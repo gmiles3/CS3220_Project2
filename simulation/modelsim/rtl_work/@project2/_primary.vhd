@@ -19,15 +19,7 @@ entity Project2 is
         IMEM_PC_BITS_LO : integer := 2;
         DMEMADDRBITS    : integer := 13;
         DMEMWORDBITS    : integer := 2;
-        DMEMWORDS       : integer := 2048;
-        OP1_ALUR        : vl_logic_vector(0 to 3) := (Hi0, Hi0, Hi0, Hi0);
-        OP1_ALUI        : vl_logic_vector(0 to 3) := (Hi1, Hi0, Hi0, Hi0);
-        OP1_CMPR        : vl_logic_vector(0 to 3) := (Hi0, Hi0, Hi1, Hi0);
-        OP1_CMPI        : vl_logic_vector(0 to 3) := (Hi1, Hi0, Hi1, Hi0);
-        OP1_BCOND       : vl_logic_vector(0 to 3) := (Hi0, Hi1, Hi1, Hi0);
-        OP1_SW          : vl_logic_vector(0 to 3) := (Hi0, Hi1, Hi0, Hi1);
-        OP1_LW          : vl_logic_vector(0 to 3) := (Hi1, Hi0, Hi0, Hi1);
-        OP1_JAL         : vl_logic_vector(0 to 3) := (Hi1, Hi0, Hi1, Hi1)
+        DMEMWORDS       : integer := 2048
     );
     port(
         SW              : in     vl_logic_vector(9 downto 0);
@@ -59,12 +51,4 @@ entity Project2 is
     attribute mti_svvh_generic_type of DMEMADDRBITS : constant is 1;
     attribute mti_svvh_generic_type of DMEMWORDBITS : constant is 1;
     attribute mti_svvh_generic_type of DMEMWORDS : constant is 1;
-    attribute mti_svvh_generic_type of OP1_ALUR : constant is 1;
-    attribute mti_svvh_generic_type of OP1_ALUI : constant is 1;
-    attribute mti_svvh_generic_type of OP1_CMPR : constant is 1;
-    attribute mti_svvh_generic_type of OP1_CMPI : constant is 1;
-    attribute mti_svvh_generic_type of OP1_BCOND : constant is 1;
-    attribute mti_svvh_generic_type of OP1_SW : constant is 1;
-    attribute mti_svvh_generic_type of OP1_LW : constant is 1;
-    attribute mti_svvh_generic_type of OP1_JAL : constant is 1;
 end Project2;

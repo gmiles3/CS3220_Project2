@@ -2,150 +2,213 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\Fawks\Documents\cs3220\Project2\Project2\simulation\modelsim
+Z0 dC:\Users\Fawks\Documents\cs3220\Project2\SCProcLukeStubbs\simulation\modelsim
 vALU
-IebR0Bg;J34OWGkQmzk;WA3
-Vmnbj<4XTj9ZnSS632zTLH3
-Z1 dC:\Users\Fawks\Documents\cs3220\Project2\Project2\simulation\modelsim
-Z2 w1445619483
-8C:/Users/Fawks/Documents/cs3220/Project2/Project2/ALU.v
-FC:/Users/Fawks/Documents/cs3220/Project2/Project2/ALU.v
+IE5XaIY;CFRbG2OGO==ZQE2
+VdC;km1UC<89C3Dja1<2YN1
+Z1 dC:\Users\Fawks\Documents\cs3220\Project2\SCProcLukeStubbs\simulation\modelsim
+w1445654839
+8C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/ALU.v
+FC:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/ALU.v
 L0 1
-Z3 OV;L;10.1d;51
+Z2 OV;L;10.1d;51
 r1
 31
-Z4 o-vlog01compat -work work -O0
-Z5 !s92 -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2 -O0
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs -O0
 n@a@l@u
 !i10b 1
-!s100 Ha;A`3n4<GjdMB06[IbnN2
+!s100 z9:JL4Se0BoRYQmVc?OIn0
 !s85 0
-!s108 1445622479.940000
-!s107 C:/Users/Fawks/Documents/cs3220/Project2/Project2/ALU.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2|C:/Users/Fawks/Documents/cs3220/Project2/Project2/ALU.v|
+!s108 1445666875.682000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs|C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/ALU.v|
 !s101 -O0
-valu_testbench
-!i10b 1
-!s100 z:069Nd5SF1GB;Bc<i:Ij0
-I]NLC6TIno:n73@SleBR3F1
-VJKcNAdbTBPa4:gYL^h3mz1
+vController
+IA9=EUM2Je3j6cI[Po[W;J0
+Vm]W[Nj^]AW=U<I@EMn:_?0
 R1
-w1445622464
-8C:/Users/Fawks/Documents/cs3220/Project2/Project2/alu_testbench.v
-FC:/Users/Fawks/Documents/cs3220/Project2/Project2/alu_testbench.v
-L0 27
-R3
+Z5 w1445652141
+8C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Controller.v
+FC:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Controller.v
+L0 1
+R2
 r1
-!s85 0
 31
-!s108 1445622480.674000
-!s107 C:/Users/Fawks/Documents/cs3220/Project2/Project2/alu_testbench.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2|C:/Users/Fawks/Documents/cs3220/Project2/Project2/alu_testbench.v|
-!s101 -O0
+R3
 R4
+n@controller
+!i10b 1
+!s100 kLH:2=VDmmk5<nle;QMSf1
+!s85 0
+!s108 1445666876.342000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs|C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Controller.v|
+!s101 -O0
+vDataMemory
+I=2dFUUY[VhbIG7PiQ`DFb0
+VA5Y7QmIWABh;VG=0FnQPB0
+R1
 R5
+8C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/DataMemory.v
+FC:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/DataMemory.v
+L0 1
+R2
+r1
+31
+R3
+n@data@memory
+R4
+!i10b 1
+!s100 =XZzVJ8nBFUE:h_VhF@H;3
+!s85 0
+!s108 1445666875.295000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/DataMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs|C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/DataMemory.v|
+!s101 -O0
 vDPRF
-IA:aX^X?czlG@o:T>ZPIQL2
+INmeC?^TjA3OMfglBL7VSZ1
 VKg<U;5QPbRJLQ:52zBX]c3
 R1
-R2
-8C:/Users/Fawks/Documents/cs3220/Project2/Project2/DPRF.v
-FC:/Users/Fawks/Documents/cs3220/Project2/Project2/DPRF.v
+R5
+8C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/DPRF.v
+FC:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/DPRF.v
 L0 1
-R3
+R2
 r1
 31
+R3
 R4
 n@d@p@r@f
-R5
 !i10b 1
-!s100 DP_NaSPBXH;_JI4DHZm7I3
+!s100 E6`O<JbJk=jlJ:YZa]@[f0
 !s85 0
-!s108 1445622479.799000
-!s107 C:/Users/Fawks/Documents/cs3220/Project2/Project2/DPRF.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2|C:/Users/Fawks/Documents/cs3220/Project2/Project2/DPRF.v|
+!s108 1445666875.508000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/DPRF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs|C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/DPRF.v|
 !s101 -O0
 vInstMemory
-I2P9E9:1@gId4nQ_dXbRFN1
+IQc0;A]cn`;HS:024XSca52
 VUJYb>IZO9F_mPNHYd`^832
 R1
-R2
-8C:/Users/Fawks/Documents/cs3220/Project2/Project2/instmemory.v
-FC:/Users/Fawks/Documents/cs3220/Project2/Project2/instmemory.v
+R5
+8C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/instmemory.v
+FC:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/instmemory.v
 L0 1
-R3
+R2
 r1
 31
+R3
 R4
-R5
 n@inst@memory
 !i10b 1
-!s100 ?cHE:io7O7cnQB`?_FN7B0
+!s100 PSE_aSFQEzAiW5UGl62A<0
 !s85 0
-!s108 1445622480.503000
-!s107 C:/Users/Fawks/Documents/cs3220/Project2/Project2/instmemory.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2|C:/Users/Fawks/Documents/cs3220/Project2/Project2/instmemory.v|
+!s108 1445666876.765000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/instmemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs|C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/instmemory.v|
 !s101 -O0
 vPLL
-Ic5Ej=j<IdUW;AHjaC00[^2
+IOnGo37Q@29XBgab8O3gc@0
 VcRJBAi;iBH4]@Zh9O[[o60
 R1
-R2
-8C:/Users/Fawks/Documents/cs3220/Project2/Project2/PLL.v
-FC:/Users/Fawks/Documents/cs3220/Project2/Project2/PLL.v
+R5
+8C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/PLL.v
+FC:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/PLL.v
 L0 39
-R3
+R2
 r1
 31
+R3
 R4
-R5
 n@p@l@l
 !i10b 1
-!s100 9F[_nM6C6kmnKBgNBaAXK0
+!s100 ^=VEf2fjJXMCg9:WlTO2`3
 !s85 0
-!s108 1445622480.221000
-!s107 C:/Users/Fawks/Documents/cs3220/Project2/Project2/PLL.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2|C:/Users/Fawks/Documents/cs3220/Project2/Project2/PLL.v|
+!s108 1445666876.103000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/PLL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs|C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/PLL.v|
 !s101 -O0
 vProject2
-IIB]@zV;dXHe9kHUT4@F@i2
-V?c^;LMNeWVaF[k>7O=^B?3
+IhM2A1W1^2R5>mRGcS0<bZ1
+V>cbF>`ZYY_Td:=19N@i3z1
 R1
-R2
-8C:/Users/Fawks/Documents/cs3220/Project2/Project2/Project2.v
-FC:/Users/Fawks/Documents/cs3220/Project2/Project2/Project2.v
+w1445665880
+8C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2.v
+FC:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2.v
 L0 1
-R3
+R2
 r1
 31
+R3
 R4
-R5
 n@project2
 !i10b 1
-!s100 9RfO7WYF>BVf7GI6h?PKd3
+!s100 eE[4l=_OU7J>eV8D3:E3i2
 !s85 0
-!s108 1445622480.096000
-!s107 C:/Users/Fawks/Documents/cs3220/Project2/Project2/Project2.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2|C:/Users/Fawks/Documents/cs3220/Project2/Project2/Project2.v|
+!s108 1445666875.800000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs|C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2.v|
 !s101 -O0
+vproject2_testbench
+!i10b 1
+!s100 Caz]Mo>P4g``<ZTVDiH<`3
+IMDRVhnGWD5d6UTLnizjZZ2
+V44b3GW7I:XbVCU4gM[UUA2
+R1
+w1445666729
+8C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/project2_testbench.v
+FC:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/project2_testbench.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1445666876.908000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/project2_testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs|C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/project2_testbench.v|
+!s101 -O0
+R3
+R4
 vRegister
-I9ilPl>]`1D_aAYT;cfU]:3
+IK2SF`cd03iOfVcRg1XbO31
 VcF=KTBfmNkUbE2U153[EE2
 R1
-R2
-8C:/Users/Fawks/Documents/cs3220/Project2/Project2/register.v
-FC:/Users/Fawks/Documents/cs3220/Project2/Project2/register.v
+R5
+8C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/register.v
+FC:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/register.v
 L0 1
-R3
+R2
 r1
 31
+R3
 R4
-R5
 n@register
 !i10b 1
-!s100 WY^GgTL0U?D5[l9o2gi423
+!s100 2HXW;Ui6`15o3?T<l0XjQ0
 !s85 0
-!s108 1445622480.362000
-!s107 C:/Users/Fawks/Documents/cs3220/Project2/Project2/register.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/Project2|C:/Users/Fawks/Documents/cs3220/Project2/Project2/register.v|
+!s108 1445666876.529000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs|C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/register.v|
+!s101 -O0
+vSevenSeg
+IlN;hkFkeQCbJ^6[bF48Hl3
+VKZQ;?2zCF>`gI56YS>C7c1
+R1
+R5
+8C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/SevenSeg.v
+FC:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/SevenSeg.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@seven@seg
+!i10b 1
+!s100 623Q^VXK]Ik;Y4F2ndoeV2
+!s85 0
+!s108 1445666875.961000
+!s107 C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/SevenSeg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs|C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/SevenSeg.v|
 !s101 -O0

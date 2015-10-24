@@ -27,15 +27,6 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   parameter DMEMWORDBITS				 = 2;
   parameter DMEMWORDS					 = 2048;
   
-  parameter OP1_ALUR 					 = 4'b0000;
-  parameter OP1_ALUI 					 = 4'b1000;
-  parameter OP1_CMPR 					 = 4'b0010;
-  parameter OP1_CMPI 					 = 4'b1010;
-  parameter OP1_BCOND					 = 4'b0110;
-  parameter OP1_SW   					 = 4'b0101;
-  parameter OP1_LW   					 = 4'b1001;
-  parameter OP1_JAL  					 = 4'b1011;
-  
   // Add parameters for various secondary opcode values
   
   //PLL, clock genration, and reset generation
@@ -60,7 +51,8 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	wire[7:0] ledg;
 	wire[9:0] sw, ledr;
 	wire[15:0] imm, hex;
-	wire ctrl_br, ctrl_mem_read, ctrl_mem_reg, ctrl_alu_op, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write;
+	wire[5:0] ctrl_alu_op;
+	wire ctrl_reg_src, ctrl_br, ctrl_mem_read, ctrl_mem_reg, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write;
 	
 	wire[31:0] reg_write_data, reg_read_data1, reg_read_data2, alu_result, mem_read_data;
 	
@@ -91,7 +83,7 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   
   // Create ALU unit
   // alu_source = (ctrl_alu_src) ? (sign extended imm) : reg_read_data2;
-  ALU alu(clk, func, reg_read_data1, reg_read_data2, alu_result);
+  ALU alu(clk, ctrl_alu_op, reg_read_data1, reg_read_data2, alu_result);
   
   // Put the code for data memory and I/O here
   // KEYS, SWITCHES, HEXS, and LEDS are memeory mapped IO
