@@ -48,6 +48,7 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   wire pcWrtEn = 1'b1;
   wire[DBITS - 1: 0] pcIn; // Implement the logic that generates pcIn; you may change pcIn to reg if necessary
   wire[DBITS - 1: 0] pcOut;
+  
   // This PC instantiation is your starting point
   Register #(.BIT_WIDTH(DBITS), .RESET_VALUE(START_PC)) pc (clk, reset, pcWrtEn, pcIn, pcOut);
 
@@ -69,6 +70,8 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	assign rs1 = ctrl_reg_src ? instWord[31:28] : instWord[27:24];
 	assign rs2 = ctrl_reg_src ? instWord[27:24] : instWord[23:19];
 	assign imm = ((instWord[23] ? -1 : 0) << 16) + instWord[23:8];
+	
+	assign pcIn = pcOut + 4 + ((ctrl_br && alu_result) ? (imm * 4) : 0);
 	
   // Put the code for getting opcode1, rd, rs, rt, imm, etc. here
   Controller controller(clk, opcode, func, ctrl_alu_op, ctrl_reg_src, ctrl_br, ctrl_mem_read, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write);
