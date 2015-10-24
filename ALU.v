@@ -4,95 +4,64 @@ module ALU(clk, opsel, A, B, out);
 	input[31:0] A, B;
 	output reg[31:0] out;
 	
-	parameter BF=0, BEQ=1, BLT=2, BLTE=3, BEQZ=5, BLTZ=6, BLTEZ=7, BT=8, BNE=9, BGTE=10, BGT=11, BNEZ=13, BGTEZ=14, BGTZ=15, ADD=16, SUB=17, AND=20, OR=21, XOR=22, MVHI=27, NAND=28, NOR=29, XNOR=30, JALR=32;
+	parameter ADD=0, SUB=1, AND=4, OR=5, XOR=6, MVHI=11, NAND=12, NOR=13, XNOR=14;
+	parameter F=0, EQ=1, LT=2, LTE=3, EQZ=5, LTZ=6, LTEZ=7, T=8, NE=9, GTE=10, GT=11, NEZ=13, GTEZ=14, GTZ=15;
 	
 	always @(posedge clk) begin
-		case (opsel)
-			BF:
-				out <= 0;
-			BEQ:
-				if (A == B) 
-					out <= 1;
-				else
+		if (opsel[4])
+			case(opsel[3:0])
+				F:
 					out <= 0;
-			BLT:
-				if (A << B)
+				EQ:
+					out <= (A == B) ? 1 : 0;
+				LT:
+					out <= (A < B) ? 1 : 0;
+				LTE:
+					out <= (A <= B) ? 1 : 0;
+				EQZ:
+					out <= (A == 0) ? 1 : 0;
+				LTZ:
+					out <= (A < 0) ? 1 : 0;
+				LTEZ:
+					out <= (A <= 0) ? 1 : 0;
+				T:
 					out <= 1;
-				else
-					out <= 0;
-			BLTE:
-				if (A <= B) 
-					out <= 1;
-				else
-					out <= 0;
-			BEQZ:
-				if (A == 0)
-					out <= 1;
-				else
-					out <= 0;
-			BLTZ:
-				if (A << 0)
-					out <= 1;
-				else
-					out <= 0;
-			BLTEZ:
-				if (A <= 0)
-					out <= 1;
-				else
-					out <= 0;
-			BT:
-				out <= 1;
-			BNE:
-				if (A == B)
-					out <= 0;
-				else
-					out <= 1;
-			BGTE:
-				if (A >= B)
-					out <= 1;
-				else
-					out <= 0;
-			BGT:
-				if (A >> B)
-					out <= 1;
-				else
-					out <= 0;
-			BNEZ:
-				if (A == 0)
-					out <= 0;
-				else
-					out <= 1;
-			BGTEZ:
-				if (A >= 0)
-					out <= 1;
-				else
-					out <= 0;
-			BGTZ:
-				if (A >> 0)
-					out <= 1;
-				else
-					out <= 0;
-			ADD: 
-				out <= A + B;
-			SUB:
-				out <= A - B;
-			JALR:
-				out <= A + (B*4);
-			AND:
-				out <= A & B;
-			OR:
-				out <= A | B;
-			XOR:
-				out <= A ^ B;
-			NAND:
-				out <= ~(A & B);
-			NOR:
-				out <= ~(A | B);
-			XNOR:
-				out <= ~(A ^ B);
-			MVHI:
-				out[31:16] <= B[15:0];
-		endcase
+				NE:
+					out <= (A == B) ? 0 : 1;
+				GTE:
+					out <= (A >= B) ? 1 : 0;
+				GT:
+					out <= (A > B) ? 1 : 0;
+				NEZ:
+					out <= (A == 0) ? 1 : 0;
+				GTEZ:
+					out <= (A >= 0) ? 1 : 0;
+				GTZ:
+					out <= (A > 0) ? 1 : 0;
+			endcase
+		else if (opsel[5])
+			out <= A + (B*4);
+		else
+			case(opsel[3:0])
+				ADD: 
+					out <= A + B;
+				SUB:
+					out <= A - B;
+				AND:
+					out <= A & B;
+				OR:
+					out <= A | B;
+				XOR:
+					out <= A ^ B;
+				NAND:
+					out <= ~(A & B);
+				NOR:
+					out <= ~(A | B);
+				XNOR:
+					out <= ~(A ^ B);
+				MVHI:
+					out[31:16] <= B[15:0];
+			endcase
 	end
 endmodule
 			

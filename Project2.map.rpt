@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project2
-Fri Oct 23 21:18:48 2015
+Fri Oct 23 22:47:23 2015
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -72,7 +72,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 23 21:18:47 2015           ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 23 22:47:23 2015           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Project2                                        ;
 ; Top-level Entity Name              ; Project2                                        ;
@@ -180,30 +180,30 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                        ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------+---------+
-; DataMemory.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Fawks/Documents/cs3220/Project2/Project2/DataMemory.v      ;         ;
-; DPRF.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Fawks/Documents/cs3220/Project2/Project2/DPRF.v            ;         ;
-; ALU.v                            ; yes             ; User Verilog HDL File        ; C:/Users/Fawks/Documents/cs3220/Project2/Project2/ALU.v             ;         ;
-; Project2.v                       ; yes             ; User Verilog HDL File        ; C:/Users/Fawks/Documents/cs3220/Project2/Project2/Project2.v        ;         ;
-; PLL.v                            ; yes             ; User Wizard-Generated File   ; C:/Users/Fawks/Documents/cs3220/Project2/Project2/PLL.v             ;         ;
-; Controller.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Fawks/Documents/cs3220/Project2/Project2/Controller.v      ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf        ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc    ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc   ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc ;         ;
-; register.v                       ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Fawks/Documents/cs3220/Project2/Project2/register.v        ;         ;
-; instmemory.v                     ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Fawks/Documents/cs3220/Project2/Project2/instmemory.v      ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                               ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
+; DataMemory.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/DataMemory.v ;         ;
+; DPRF.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/DPRF.v       ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File        ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/ALU.v        ;         ;
+; Project2.v                       ; yes             ; User Verilog HDL File        ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2.v   ;         ;
+; PLL.v                            ; yes             ; User Wizard-Generated File   ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/PLL.v        ;         ;
+; Controller.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Controller.v ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf           ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc       ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc      ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc    ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc    ;         ;
+; register.v                       ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/register.v   ;         ;
+; instmemory.v                     ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/instmemory.v ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -241,13 +241,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                            ;
-+--------+--------------+---------+--------------+--------------+------------------------+---------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance        ; IP Include File                                         ;
-+--------+--------------+---------+--------------+--------------+------------------------+---------------------------------------------------------+
-; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |Project2|PLL:PLL_inst ; C:/Users/Fawks/Documents/cs3220/Project2/Project2/PLL.v ;
-+--------+--------------+---------+--------------+--------------+------------------------+---------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                    ;
++--------+--------------+---------+--------------+--------------+------------------------+-----------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance        ; IP Include File                                                 ;
++--------+--------------+---------+--------------+--------------+------------------------+-----------------------------------------------------------------+
+; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |Project2|PLL:PLL_inst ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/PLL.v ;
++--------+--------------+---------+--------------+--------------+------------------------+-----------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -896,30 +896,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------+
 ; Parameter Name ; Value ; Type                        ;
 +----------------+-------+-----------------------------+
-; BF             ; 0     ; Signed Integer              ;
-; BEQ            ; 1     ; Signed Integer              ;
-; BLT            ; 2     ; Signed Integer              ;
-; BLTE           ; 3     ; Signed Integer              ;
-; BEQZ           ; 5     ; Signed Integer              ;
-; BLTZ           ; 6     ; Signed Integer              ;
-; BLTEZ          ; 7     ; Signed Integer              ;
-; BT             ; 8     ; Signed Integer              ;
-; BNE            ; 9     ; Signed Integer              ;
-; BGTE           ; 10    ; Signed Integer              ;
-; BGT            ; 11    ; Signed Integer              ;
-; BNEZ           ; 13    ; Signed Integer              ;
-; BGTEZ          ; 14    ; Signed Integer              ;
-; BGTZ           ; 15    ; Signed Integer              ;
-; ADD            ; 16    ; Signed Integer              ;
-; SUB            ; 17    ; Signed Integer              ;
-; AND            ; 20    ; Signed Integer              ;
-; OR             ; 21    ; Signed Integer              ;
-; XOR            ; 22    ; Signed Integer              ;
-; MVHI           ; 27    ; Signed Integer              ;
-; NAND           ; 28    ; Signed Integer              ;
-; NOR            ; 29    ; Signed Integer              ;
-; XNOR           ; 30    ; Signed Integer              ;
-; JALR           ; 32    ; Signed Integer              ;
+; ADD            ; 0     ; Signed Integer              ;
+; SUB            ; 1     ; Signed Integer              ;
+; AND            ; 4     ; Signed Integer              ;
+; OR             ; 5     ; Signed Integer              ;
+; XOR            ; 6     ; Signed Integer              ;
+; MVHI           ; 11    ; Signed Integer              ;
+; NAND           ; 12    ; Signed Integer              ;
+; NOR            ; 13    ; Signed Integer              ;
+; XNOR           ; 14    ; Signed Integer              ;
+; F              ; 0     ; Signed Integer              ;
+; EQ             ; 1     ; Signed Integer              ;
+; LT             ; 2     ; Signed Integer              ;
+; LTE            ; 3     ; Signed Integer              ;
+; EQZ            ; 5     ; Signed Integer              ;
+; LTZ            ; 6     ; Signed Integer              ;
+; LTEZ           ; 7     ; Signed Integer              ;
+; T              ; 8     ; Signed Integer              ;
+; NE             ; 9     ; Signed Integer              ;
+; GTE            ; 10    ; Signed Integer              ;
+; GT             ; 11    ; Signed Integer              ;
+; NEZ            ; 13    ; Signed Integer              ;
+; GTEZ           ; 14    ; Signed Integer              ;
+; GTZ            ; 15    ; Signed Integer              ;
 +----------------+-------+-----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1025,7 +1024,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Oct 23 21:18:45 2015
+    Info: Processing started: Fri Oct 23 22:47:21 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project2 -c Project2
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file datamemory.v
@@ -1182,7 +1181,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX3[4]" is stuck at GND
     Warning (13410): Pin "HEX3[5]" is stuck at GND
     Warning (13410): Pin "HEX3[6]" is stuck at GND
-Info (144001): Generated suppressed messages file C:/Users/Fawks/Documents/cs3220/Project2/Project2/Project2.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 15 input pin(s) that do not drive logic
@@ -1205,15 +1204,15 @@ Info (21057): Implemented 61 device resources after synthesis - the final resour
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 46 output pins
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 84 warnings
-    Info: Peak virtual memory: 504 megabytes
-    Info: Processing ended: Fri Oct 23 21:18:48 2015
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 501 megabytes
+    Info: Processing ended: Fri Oct 23 22:47:23 2015
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Fawks/Documents/cs3220/Project2/Project2/Project2.map.smsg.
+The suppressed messages can be found in C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2.map.smsg.
 
 
