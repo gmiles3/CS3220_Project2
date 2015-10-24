@@ -1,7 +1,7 @@
 module ALU(clk, opsel, A, B, out);
 	input clk;
 	input[5:0] opsel;
-	input[31:0] A, B;
+	input signed[31:0] A, B;
 	output reg[31:0] out;
 	
 	parameter ADD=0, SUB=1, AND=4, OR=5, XOR=6, MVHI=11, NAND=12, NOR=13, XNOR=14;
@@ -60,7 +60,7 @@ module ALU(clk, opsel, A, B, out);
 				XNOR:
 					out <= ~(A ^ B);
 				MVHI:
-					out[31:16] <= B[15:0];
+					out <= {B[15:0], 16'b0};
 			endcase
 	end
 endmodule

@@ -10,6 +10,12 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/SignExtension.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SignExtension
+# 
+# Top level modules:
+# 	SignExtension
 # vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/DataMemory.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module DataMemory
@@ -65,31 +71,18 @@
 # Top level modules:
 # 	InstMemory
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/project2_testbench.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/dprf_testbench.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module project2_testbench
+# -- Compiling module dprf_testbench
 # 
 # Top level modules:
-# 	project2_testbench
+# 	dprf_testbench
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  project2_testbench
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps project2_testbench 
-# Loading work.project2_testbench
-# Loading work.PLL
-# Loading altera_mf_ver.altpll
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.pll_iobuf
-# Loading work.Register
-# Loading work.InstMemory
-# Loading work.Controller
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  dprf_testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps dprf_testbench 
+# Loading work.dprf_testbench
 # Loading work.DPRF
-# Loading work.ALU
-# Loading work.DataMemory
-# Loading altera_mf_ver.MF_stratixii_pll
-# Loading altera_mf_ver.MF_pll_reg
-# Loading altera_mf_ver.arm_m_cntr
-# Loading altera_mf_ver.arm_n_cntr
-# Loading altera_mf_ver.arm_scale_cntr
+# Loading work.Register
 # 
 # add wave *
 # view structure
@@ -97,10 +90,15 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-#  Note : Cyclone II PLL is enabled
-# Time: 0  Instance: project2_testbench.PLL_inst.altpll_component.stratixii_pll.pll1
-# pcWrtEn: 1	pcIn:          x	pcOut:          x
-#  Note : Cyclone II PLL locked to incoming clock
-# Time: 65000  Instance: project2_testbench.PLL_inst.altpll_component.stratixii_pll.pll1
-# Break key hit 
-# Break in Module MF_stratixii_pll at C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v line 8757
+# 100000	we: 1	reg_dst:  3	reg_a:  0	reg_b:  0	data_in:         30	out_a:          x	out_b:          x
+# 200000	we: 0	reg_dst:  3	reg_a:  0	reg_b:  0	data_in:         30	out_a:          x	out_b:          x
+# 300000	we: 0	reg_dst: 10	reg_a:  0	reg_b:  0	data_in:        100	out_a:          x	out_b:          x
+# 400000	we: 0	reg_dst: 10	reg_a:  3	reg_b:  0	data_in:        100	out_a:         30	out_b:          x
+# 500000	we: 0	reg_dst: 10	reg_a:  3	reg_b: 10	data_in:        100	out_a:         30	out_b:          x
+# ** Note: $finish    : C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/dprf_testbench.v(69)
+#    Time: 600 ns  Iteration: 0  Instance: /dprf_testbench
+# 1
+# Break in Module dprf_testbench at C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/dprf_testbench.v line 69
+# Simulation Breakpoint: 1
+# Break in Module dprf_testbench at C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/dprf_testbench.v line 69
+# MACRO ./Project2_run_msim_rtl_verilog.do PAUSED at line 26

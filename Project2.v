@@ -37,7 +37,7 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   
   // Create PC and its logic
   wire pcWrtEn = 1'b1;
-  reg[DBITS - 1: 0] pcIn; // Implement the logic that generates pcIn; you may change pcIn to reg if necessary
+  wire[DBITS - 1: 0] pcIn; // Implement the logic that generates pcIn; you may change pcIn to reg if necessary
   wire[DBITS - 1: 0] pcOut;
   
   // This PC instantiation is your starting point
@@ -56,23 +56,17 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	
 	wire[31:0] reg_write_data, reg_read_data1, reg_read_data2, alu_source, alu_result, mem_read_data;
 	
+	SignExtension #(.IN_BIT_WIDTH(16), .OUT_BIT_WIDTH(DBITS)) immSex(instWord[23:8], imm);
+	
 	assign func = instWord[7:4];
 	assign opcode = instWord[3:0];
 	assign rd = (opcode == 4'd11) ? (pcOut + INST_SIZE) : instWord[31:28];
 	assign rs1 = ctrl_reg_src ? instWord[31:28] : instWord[27:24];
 	assign rs2 = ctrl_reg_src ? instWord[27:24] : instWord[23:19];
-	assign imm = ((instWord[23] ? -1 : 0) << 16) + instWord[23:8];
 	assign reg_write_data = (ctrl_mem_read) ? mem_read_data : alu_result;
 	assign alu_source = ctrl_alu_src ? imm : reg_read_data2;
-	
-	always @(posedge clk) begin
-		if (opcode == 4'd11)
-			pcIn <= reg_read_data1 + (imm * 4);
-		else if (ctrl_br && alu_result)
-			pcIn <= pcOut + INST_SIZE + (imm * 4);
-		else
-			pcIn <= pcOut + INST_SIZE;
-	end
+	assign pcIn = (opcode == 4'd11) ? reg_read_data1 + (imm * 4) :
+						(ctrl_br && alu_result != 0) ? pcOut + INST_SIZE + (imm * 4) : pcOut + INST_SIZE;
 	
 	SevenSeg hex0(hex[3:0], HEX0);
 	SevenSeg hex1(hex[7:4], HEX1);

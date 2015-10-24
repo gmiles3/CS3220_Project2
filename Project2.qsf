@@ -539,6 +539,7 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id alu_testbenc
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME alu_testbench -section_id alu_testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE dprf_testbench.v -section_id dprf_testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE alu_testbench.v -section_id alu_testbench
+set_global_assignment -name VERILOG_FILE SignExtension.v
 set_global_assignment -name MIF_FILE LightTest.mif
 set_global_assignment -name VERILOG_FILE DataMemory.v
 set_global_assignment -name VERILOG_FILE dprf_testbench.v
