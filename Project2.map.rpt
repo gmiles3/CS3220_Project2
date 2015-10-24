@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project2
-Fri Oct 23 20:25:20 2015
+Fri Oct 23 21:18:48 2015
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,12 +40,13 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  32. Parameter Settings for User Entity Instance: DataMemory:datamem
  33. altpll Parameter Settings by Entity Instance
  34. Port Connectivity Checks: "DataMemory:datamem"
- 35. Port Connectivity Checks: "Controller:controller"
- 36. Port Connectivity Checks: "InstMemory:instMem"
- 37. Port Connectivity Checks: "Register:pc"
- 38. Elapsed Time Per Partition
- 39. Analysis & Synthesis Messages
- 40. Analysis & Synthesis Suppressed Messages
+ 35. Port Connectivity Checks: "ALU:alu"
+ 36. Port Connectivity Checks: "Controller:controller"
+ 37. Port Connectivity Checks: "InstMemory:instMem"
+ 38. Port Connectivity Checks: "Register:pc"
+ 39. Elapsed Time Per Partition
+ 40. Analysis & Synthesis Messages
+ 41. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -71,7 +72,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 23 20:25:20 2015           ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 23 21:18:47 2015           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Project2                                        ;
 ; Top-level Entity Name              ; Project2                                        ;
@@ -895,15 +896,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------+
 ; Parameter Name ; Value ; Type                        ;
 +----------------+-------+-----------------------------+
-; ADD            ; 0     ; Signed Integer              ;
-; SUB            ; 1     ; Signed Integer              ;
-; AND            ; 2     ; Signed Integer              ;
-; OR             ; 3     ; Signed Integer              ;
-; XOR            ; 4     ; Signed Integer              ;
-; NAND           ; 5     ; Signed Integer              ;
-; NOR            ; 6     ; Signed Integer              ;
-; XNOR           ; 7     ; Signed Integer              ;
-; MVHI           ; 8     ; Signed Integer              ;
+; BF             ; 0     ; Signed Integer              ;
+; BEQ            ; 1     ; Signed Integer              ;
+; BLT            ; 2     ; Signed Integer              ;
+; BLTE           ; 3     ; Signed Integer              ;
+; BEQZ           ; 5     ; Signed Integer              ;
+; BLTZ           ; 6     ; Signed Integer              ;
+; BLTEZ          ; 7     ; Signed Integer              ;
+; BT             ; 8     ; Signed Integer              ;
+; BNE            ; 9     ; Signed Integer              ;
+; BGTE           ; 10    ; Signed Integer              ;
+; BGT            ; 11    ; Signed Integer              ;
+; BNEZ           ; 13    ; Signed Integer              ;
+; BGTEZ          ; 14    ; Signed Integer              ;
+; BGTZ           ; 15    ; Signed Integer              ;
+; ADD            ; 16    ; Signed Integer              ;
+; SUB            ; 17    ; Signed Integer              ;
+; AND            ; 20    ; Signed Integer              ;
+; OR             ; 21    ; Signed Integer              ;
+; XOR            ; 22    ; Signed Integer              ;
+; MVHI           ; 27    ; Signed Integer              ;
+; NAND           ; 28    ; Signed Integer              ;
+; NOR            ; 29    ; Signed Integer              ;
+; XNOR           ; 30    ; Signed Integer              ;
+; JALR           ; 32    ; Signed Integer              ;
 +----------------+-------+-----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -949,6 +965,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; hex  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; dOut ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:alu"                                                                                                                                      ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; opsel ; Input ; Warning  ; Input port expression (4 bits) is smaller than the input port (6 bits) it drives.  Extra input bit(s) "opsel[5..4]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1000,7 +1025,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Oct 23 20:25:17 2015
+    Info: Processing started: Fri Oct 23 21:18:45 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project2 -c Project2
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file datamemory.v
@@ -1109,7 +1134,7 @@ Info (12128): Elaborating entity "DataMemory" for hierarchy "DataMemory:datamem"
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following PLL node(s):
         Warning (14320): Synthesized away node "PLL:PLL_inst|altpll:altpll_component|_clk0"
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[0]" is stuck at GND
     Warning (13410): Pin "LEDR[1]" is stuck at GND
@@ -1180,8 +1205,8 @@ Info (21057): Implemented 61 device resources after synthesis - the final resour
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 46 output pins
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 84 warnings
-    Info: Peak virtual memory: 488 megabytes
-    Info: Processing ended: Fri Oct 23 20:25:20 2015
+    Info: Peak virtual memory: 504 megabytes
+    Info: Processing ended: Fri Oct 23 21:18:48 2015
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
