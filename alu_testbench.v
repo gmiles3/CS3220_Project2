@@ -27,7 +27,7 @@
 module alu_testbench;
 
 	reg clk;
-	reg[3:0] opsel;
+	reg[5:0] opsel;
 	reg[31:0] A, B;
 	reg signed[31:0] Expected;
 	wire signed[31:0] out;
