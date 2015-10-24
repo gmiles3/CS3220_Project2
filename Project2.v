@@ -73,6 +73,16 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	
 	assign pcIn = (opcode == 11) ? (reg_read_data1 + (4 * imm)) : (pcOut + 4 + ((ctrl_br && alu_result) ? (imm * 4) : 0));
 	
+	assign sw = SW;
+	assign key = KEY;
+	assign LEDR = ledr;
+	assign LEDG = ledg;
+	
+	SevenSeg hex0(hex[3:0], HEX0);
+	SevenSeg hex1(hex[7:4], HEX1);
+	SevenSeg hex2(hex[11:8], HEX2);
+	SevenSeg hex3(hex[15:12], HEX3);
+	
   // Put the code for getting opcode1, rd, rs, rt, imm, etc. here
   Controller controller(clk, opcode, func, ctrl_alu_op, ctrl_reg_src, ctrl_br, ctrl_mem_read, ctrl_mem_write, ctrl_alu_src, ctrl_reg_write);
   

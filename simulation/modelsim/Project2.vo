@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "10/23/2015 23:27:36"
+// DATE "10/23/2015 23:36:31"
 
 // 
 // Device: Altera EP2C20F484C7 Package FBGA484
@@ -1499,7 +1499,7 @@ defparam \HEX0[5]~I .output_sync_reset = "none";
 
 // Location: PIN_E2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \HEX0[6]~I (
-	.datain(gnd),
+	.datain(vcc),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -1751,7 +1751,7 @@ defparam \HEX1[5]~I .output_sync_reset = "none";
 
 // Location: PIN_D1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \HEX1[6]~I (
-	.datain(gnd),
+	.datain(vcc),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -2003,7 +2003,7 @@ defparam \HEX2[5]~I .output_sync_reset = "none";
 
 // Location: PIN_D3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \HEX2[6]~I (
-	.datain(gnd),
+	.datain(vcc),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -2255,7 +2255,7 @@ defparam \HEX3[5]~I .output_sync_reset = "none";
 
 // Location: PIN_D4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \HEX3[6]~I (
-	.datain(gnd),
+	.datain(vcc),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
