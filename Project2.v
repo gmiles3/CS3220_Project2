@@ -17,7 +17,7 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	parameter ADDR_LEDR 					 = 32'hF0000004;
 	parameter ADDR_LEDG 					 = 32'hF0000008;
 	  
-	parameter IMEM_INIT_FILE				 = "LightTest.mif";
+	parameter IMEM_INIT_FILE				 = "Sorter2.mif";
 	parameter IMEM_ADDR_BIT_WIDTH 		 = 11;
 	parameter IMEM_DATA_BIT_WIDTH 		 = INST_BIT_WIDTH;
 	parameter IMEM_PC_BITS_HI     		 = IMEM_ADDR_BIT_WIDTH + 2;
@@ -47,8 +47,8 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	wire[3:0] key;
 	wire[7:0] ledg;
 	wire[9:0] sw, ledr;
-	wire[15:0] imm, hex;
-	wire[31:0] selRegRead1, selRegRead2, selRegWrite, pcNext, regWriteData, regReadData1, regReadData2, aluSource, aluResult, memReadData;
+	wire[15:0] hex;
+	wire[31:0] selRegRead1, selRegRead2, selRegWrite, pcNext, imm, regWriteData, regReadData1, regReadData2, aluSource, aluResult, memReadData;
 	wire[5:0] selALUop;
 	wire enBranch, enRegWrite, enMemWrite, aluSrcIsReg, memToReg;
 	

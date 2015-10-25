@@ -20,13 +20,12 @@ module Controller(
 	
 	input clk;
 	input[31:0] pcCurrent, instWord;
-	output reg[31:0] selRegRead1, selRegRead2, selRegWrite, pcNext;
-	output reg[15:0] immSign;
+	output reg[31:0] selRegRead1, selRegRead2, selRegWrite, pcNext, immSign;
 	output reg[5:0] selALUop;
 	output reg enableBranch, enableRegWrite, enableMemWrite, aluSrcIsReg, memToReg;
 	
 	wire[3:0] ra, rb, rc, func, op;
-	wire[15:0] imm;
+	wire[31:0] imm;
 	
 	assign ra = instWord[31:28];
 	assign rb = instWord[27:24];

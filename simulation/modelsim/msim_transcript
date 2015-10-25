@@ -82,6 +82,10 @@
 # vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps controller_testbench 
 # Loading work.controller_testbench
 # Loading work.Controller
+# Loading work.SignExtension
+# ** Warning: (vsim-3015) C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v(10): [PCDPC] - Port size (6 or 6) does not match connection size (1) for port 'selALUop'. The port definition is at: C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Controller.v(10).
+# 
+#         Region: /controller_testbench/controller
 # 
 # add wave *
 # view structure
@@ -89,25 +93,27 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# 100000	opcode:  0	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 1	ctrl_mem_write: 0	ctrl_alu_src: 0	ctrl_reg_write: 1
-# 300000	opcode:  8	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 1	ctrl_mem_write: 0	ctrl_alu_src: 0	ctrl_reg_write: 1
-# 305000	opcode:  8	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 1	ctrl_mem_write: 0	ctrl_alu_src: 1	ctrl_reg_write: 1
-# 400000	opcode:  9	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 1	ctrl_mem_write: 0	ctrl_alu_src: 1	ctrl_reg_write: 1
-# 405000	opcode:  9	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 1	ctrl_mem_read: 1	ctrl_mem_write: 0	ctrl_alu_src: 1	ctrl_reg_write: 1
-# 500000	opcode:  5	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 1	ctrl_mem_read: 1	ctrl_mem_write: 0	ctrl_alu_src: 1	ctrl_reg_write: 1
-# 505000	opcode:  5	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 1	ctrl_mem_write: 1	ctrl_alu_src: 1	ctrl_reg_write: 0
-# 600000	opcode:  2	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 1	ctrl_mem_write: 1	ctrl_alu_src: 1	ctrl_reg_write: 0
-# 605000	opcode:  2	func:  0	ctrl_alu_op: 16	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 0	ctrl_mem_write: 0	ctrl_alu_src: 0	ctrl_reg_write: 1
-# 700000	opcode: 10	func:  0	ctrl_alu_op: 16	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 0	ctrl_mem_write: 0	ctrl_alu_src: 0	ctrl_reg_write: 1
-# 705000	opcode: 10	func:  0	ctrl_alu_op: 16	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 0	ctrl_mem_write: 0	ctrl_alu_src: 1	ctrl_reg_write: 1
-# 800000	opcode:  6	func:  0	ctrl_alu_op: 16	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 0	ctrl_mem_write: 0	ctrl_alu_src: 1	ctrl_reg_write: 1
-# 805000	opcode:  6	func:  0	ctrl_alu_op: 16	ctrl_reg_src: 1	ctrl_br: 0	ctrl_mem_read: 0	ctrl_mem_write: 0	ctrl_alu_src: 0	ctrl_reg_write: 0
-# 900000	opcode: 11	func:  0	ctrl_alu_op: 16	ctrl_reg_src: 1	ctrl_br: 0	ctrl_mem_read: 0	ctrl_mem_write: 0	ctrl_alu_src: 0	ctrl_reg_write: 0
-# 905000	opcode: 11	func:  0	ctrl_alu_op: 32	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 0	ctrl_mem_write: 0	ctrl_alu_src: 1	ctrl_reg_write: 1
-# ** Note: $finish    : C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v(39)
+# 100000	pcOut:         64	instWord: 3236954296	selRegRead1:          0	selRegRead2:         14	selRegWrite:         12	imm: 4294963200	pcNext: 1	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 00
+# 200000	pcOut:         64	instWord:          0	selRegRead1:          0	selRegRead2:         14	selRegWrite:         12	imm: 4294963200	pcNext: 1	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 00
+# 205000	pcOut:         64	instWord:          0	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 10
+# 300000	pcOut:         64	instWord:          8	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 10
+# 305000	pcOut:         64	instWord:          8	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 00
+# 400000	pcOut:         64	instWord:          9	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 00
+# 405000	pcOut:         64	instWord:          9	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 01
+# 500000	pcOut:         64	instWord:          5	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 01
+# 505000	pcOut:         64	instWord:          5	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 0	aluSrcIsReg: 1	memToReg: 00
+# 600000	pcOut:         64	instWord:          2	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 0	aluSrcIsReg: 1	memToReg: 00
+# 605000	pcOut:         64	instWord:          2	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 10
+# 700000	pcOut:         64	instWord:         10	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 10
+# 705000	pcOut:         64	instWord:         10	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 00
+# 800000	pcOut:         64	instWord:          6	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 00
+# 805000	pcOut:         64	instWord:          6	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 1	enMemWrite: 0	aluSrcIsReg: 0	memToReg: 00
+# 900000	pcOut:         64	instWord:         11	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 1	enMemWrite: 0	aluSrcIsReg: 0	memToReg: 00
+# 905000	pcOut:         64	instWord:         11	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 00
+# ** Note: $finish    : C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v(41)
 #    Time: 1 us  Iteration: 0  Instance: /controller_testbench
 # 1
-# Break in Module controller_testbench at C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v line 39
+# Break in Module controller_testbench at C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v line 41
 # Simulation Breakpoint: 1
-# Break in Module controller_testbench at C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v line 39
+# Break in Module controller_testbench at C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v line 41
 # MACRO ./Project2_run_msim_rtl_verilog.do PAUSED at line 26

@@ -4,7 +4,7 @@
 .NAME	OFSLEDG=0x00000008
 
     .ORIG 0x40
-AtZero:
+Face:
     ; Display 0xFF on LEDG
     mvhi	gp,IOBASE
     andi	s0,s0,0
@@ -14,4 +14,4 @@ AtZero:
     andi	s0,s0,0
     addi	t0,s0,0xFACE
     sw		t0,OFSHEX(gp)
-    bt		t0,t0,AtZero
+    bt		t0,t0,Face
