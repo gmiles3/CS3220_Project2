@@ -71,18 +71,17 @@
 # Top level modules:
 # 	InstMemory
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/dprf_testbench.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module dprf_testbench
+# -- Compiling module controller_testbench
 # 
 # Top level modules:
-# 	dprf_testbench
+# 	controller_testbench
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  dprf_testbench
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps dprf_testbench 
-# Loading work.dprf_testbench
-# Loading work.DPRF
-# Loading work.Register
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  controller_testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps controller_testbench 
+# Loading work.controller_testbench
+# Loading work.Controller
 # 
 # add wave *
 # view structure
@@ -90,15 +89,25 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# 100000	we: 1	reg_dst:  3	reg_a:  0	reg_b:  0	data_in:         30	out_a:          x	out_b:          x
-# 200000	we: 0	reg_dst:  3	reg_a:  0	reg_b:  0	data_in:         30	out_a:          x	out_b:          x
-# 300000	we: 0	reg_dst: 10	reg_a:  0	reg_b:  0	data_in:        100	out_a:          x	out_b:          x
-# 400000	we: 0	reg_dst: 10	reg_a:  3	reg_b:  0	data_in:        100	out_a:         30	out_b:          x
-# 500000	we: 0	reg_dst: 10	reg_a:  3	reg_b: 10	data_in:        100	out_a:         30	out_b:          x
-# ** Note: $finish    : C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/dprf_testbench.v(69)
-#    Time: 600 ns  Iteration: 0  Instance: /dprf_testbench
+# 100000	opcode:  0	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 1	ctrl_mem_write: 0	ctrl_alu_src: 0	ctrl_reg_write: 1
+# 300000	opcode:  8	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 1	ctrl_mem_write: 0	ctrl_alu_src: 0	ctrl_reg_write: 1
+# 305000	opcode:  8	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 1	ctrl_mem_write: 0	ctrl_alu_src: 1	ctrl_reg_write: 1
+# 400000	opcode:  9	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 1	ctrl_mem_write: 0	ctrl_alu_src: 1	ctrl_reg_write: 1
+# 405000	opcode:  9	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 1	ctrl_mem_read: 1	ctrl_mem_write: 0	ctrl_alu_src: 1	ctrl_reg_write: 1
+# 500000	opcode:  5	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 1	ctrl_mem_read: 1	ctrl_mem_write: 0	ctrl_alu_src: 1	ctrl_reg_write: 1
+# 505000	opcode:  5	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 1	ctrl_mem_write: 1	ctrl_alu_src: 1	ctrl_reg_write: 0
+# 600000	opcode:  2	func:  0	ctrl_alu_op:  0	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 1	ctrl_mem_write: 1	ctrl_alu_src: 1	ctrl_reg_write: 0
+# 605000	opcode:  2	func:  0	ctrl_alu_op: 16	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 0	ctrl_mem_write: 0	ctrl_alu_src: 0	ctrl_reg_write: 1
+# 700000	opcode: 10	func:  0	ctrl_alu_op: 16	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 0	ctrl_mem_write: 0	ctrl_alu_src: 0	ctrl_reg_write: 1
+# 705000	opcode: 10	func:  0	ctrl_alu_op: 16	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 0	ctrl_mem_write: 0	ctrl_alu_src: 1	ctrl_reg_write: 1
+# 800000	opcode:  6	func:  0	ctrl_alu_op: 16	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 0	ctrl_mem_write: 0	ctrl_alu_src: 1	ctrl_reg_write: 1
+# 805000	opcode:  6	func:  0	ctrl_alu_op: 16	ctrl_reg_src: 1	ctrl_br: 0	ctrl_mem_read: 0	ctrl_mem_write: 0	ctrl_alu_src: 0	ctrl_reg_write: 0
+# 900000	opcode: 11	func:  0	ctrl_alu_op: 16	ctrl_reg_src: 1	ctrl_br: 0	ctrl_mem_read: 0	ctrl_mem_write: 0	ctrl_alu_src: 0	ctrl_reg_write: 0
+# 905000	opcode: 11	func:  0	ctrl_alu_op: 32	ctrl_reg_src: 0	ctrl_br: 0	ctrl_mem_read: 0	ctrl_mem_write: 0	ctrl_alu_src: 1	ctrl_reg_write: 1
+# ** Note: $finish    : C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v(39)
+#    Time: 1 us  Iteration: 0  Instance: /controller_testbench
 # 1
-# Break in Module dprf_testbench at C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/dprf_testbench.v line 69
+# Break in Module controller_testbench at C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v line 39
 # Simulation Breakpoint: 1
-# Break in Module dprf_testbench at C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/dprf_testbench.v line 69
+# Break in Module controller_testbench at C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v line 39
 # MACRO ./Project2_run_msim_rtl_verilog.do PAUSED at line 26

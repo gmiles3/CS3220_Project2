@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sat Oct 24 15:37:32 2015
+Analysis & Synthesis Status : Successful - Sat Oct 24 22:16:44 2015
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Project2
 Top-level Entity Name : Project2
 Family : Cyclone II
-Total logic elements : 1,368
-    Total combinational functions : 1,052
-    Dedicated logic registers : 424
-Total registers : 424
+Total logic elements : 1,276
+    Total combinational functions : 1,024
+    Dedicated logic registers : 386
+Total registers : 386
 Total pins : 61
 Total virtual pins : 0
 Total memory bits : 65,552

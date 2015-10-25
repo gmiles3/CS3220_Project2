@@ -16,10 +16,7 @@ entity Project2 is
         IMEM_ADDR_BIT_WIDTH: integer := 11;
         IMEM_DATA_BIT_WIDTH: vl_notype;
         IMEM_PC_BITS_HI : vl_notype;
-        IMEM_PC_BITS_LO : integer := 2;
-        DMEMADDRBITS    : integer := 13;
-        DMEMWORDBITS    : integer := 2;
-        DMEMWORDS       : integer := 2048
+        IMEM_PC_BITS_LO : integer := 2
     );
     port(
         SW              : in     vl_logic_vector(9 downto 0);
@@ -48,7 +45,4 @@ entity Project2 is
     attribute mti_svvh_generic_type of IMEM_DATA_BIT_WIDTH : constant is 3;
     attribute mti_svvh_generic_type of IMEM_PC_BITS_HI : constant is 3;
     attribute mti_svvh_generic_type of IMEM_PC_BITS_LO : constant is 1;
-    attribute mti_svvh_generic_type of DMEMADDRBITS : constant is 1;
-    attribute mti_svvh_generic_type of DMEMWORDBITS : constant is 1;
-    attribute mti_svvh_generic_type of DMEMWORDS : constant is 1;
 end Project2;

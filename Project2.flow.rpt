@@ -1,5 +1,5 @@
 Flow report for Project2
-Sat Oct 24 15:38:11 2015
+Sat Oct 24 22:17:23 2015
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sat Oct 24 15:38:11 2015           ;
+; Flow Status                        ; Successful - Sat Oct 24 22:17:23 2015           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Project2                                        ;
 ; Top-level Entity Name              ; Project2                                        ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C20F484C7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 1,164 / 18,752 ( 6 % )                          ;
-;     Total combinational functions  ; 1,052 / 18,752 ( 6 % )                          ;
-;     Dedicated logic registers      ; 436 / 18,752 ( 2 % )                            ;
-; Total registers                    ; 436                                             ;
+; Total logic elements               ; 1,099 / 18,752 ( 6 % )                          ;
+;     Total combinational functions  ; 1,024 / 18,752 ( 5 % )                          ;
+;     Dedicated logic registers      ; 380 / 18,752 ( 2 % )                            ;
+; Total registers                    ; 398                                             ;
 ; Total pins                         ; 61 / 315 ( 19 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 65,552 / 239,616 ( 27 % )                       ;
@@ -64,66 +64,70 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/24/2015 15:37:25 ;
+; Start date & time ; 10/24/2015 22:16:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Project2            ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                ;
-+---------------------------------------------------+------------------------------+---------------+-------------+----------------+
-; Assignment Name                                   ; Value                        ; Default Value ; Entity Name ; Section Id     ;
-+---------------------------------------------------+------------------------------+---------------+-------------+----------------+
-; ADD_PASS_THROUGH_LOGIC_TO_INFERRED_RAMS           ; Off                          ; On            ; --          ; --             ;
-; ALLOW_ANY_RAM_SIZE_FOR_RECOGNITION                ; On                           ; Off           ; --          ; --             ;
-; ALLOW_ANY_ROM_SIZE_FOR_RECOGNITION                ; On                           ; Off           ; --          ; --             ;
-; AUTO_RAM_TO_LCELL_CONVERSION                      ; On                           ; Off           ; --          ; --             ;
-; COMPILER_SIGNATURE_ID                             ; 136298991064.144571544408104 ; --            ; --          ; --             ;
-; CYCLONEII_OPTIMIZATION_TECHNIQUE                  ; Speed                        ; Balanced      ; --          ; --             ;
-; EDA_DESIGN_INSTANCE_NAME                          ; NA                           ; --            ; --          ; dprf_testbench ;
-; EDA_DESIGN_INSTANCE_NAME                          ; NA                           ; --            ; --          ; alu_testbench  ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH              ; dprf_testbench               ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT                            ; Verilog Hdl                  ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                               ; ModelSim-Altera (Verilog)    ; <None>        ; --          ; --             ;
-; EDA_TEST_BENCH_ENABLE_STATUS                      ; TEST_BENCH_MODE              ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                               ; dprf_testbench.v             ; --            ; --          ; dprf_testbench ;
-; EDA_TEST_BENCH_FILE                               ; alu_testbench.v              ; --            ; --          ; alu_testbench  ;
-; EDA_TEST_BENCH_MODULE_NAME                        ; dprf_testbench               ; --            ; --          ; dprf_testbench ;
-; EDA_TEST_BENCH_MODULE_NAME                        ; alu_testbench                ; --            ; --          ; alu_testbench  ;
-; EDA_TEST_BENCH_NAME                               ; dprf_testbench               ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_NAME                               ; alu_testbench                ; --            ; --          ; eda_simulation ;
-; EDA_TIME_SCALE                                    ; 1 ps                         ; --            ; --          ; eda_simulation ;
-; ENABLE_SIGNALTAP                                  ; Off                          ; --            ; --          ; --             ;
-; FITTER_EFFORT                                     ; Standard Fit                 ; Auto Fit      ; --          ; --             ;
-; IP_TOOL_NAME                                      ; ALTPLL                       ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                                   ; 13.0                         ; --            ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP                            ; 85                           ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP                            ; 0                            ; --            ; --          ; --             ;
-; MISC_FILE                                         ; Lectures.dpf                 ; --            ; --          ; --             ;
-; MISC_FILE                                         ; PLL_inst.v                   ; --            ; --          ; --             ;
-; MISC_FILE                                         ; PLL_bb.v                     ; --            ; --          ; --             ;
-; MISC_FILE                                         ; PLL.ppf                      ; --            ; --          ; --             ;
-; PARTITION_COLOR                                   ; 16764057                     ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL               ; PLACEMENT_AND_ROUTING        ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE                            ; SOURCE                       ; --            ; --          ; Top            ;
-; PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING ; On                           ; Off           ; --          ; --             ;
-; PHYSICAL_SYNTHESIS_COMBO_LOGIC                    ; On                           ; Off           ; --          ; --             ;
-; PHYSICAL_SYNTHESIS_EFFORT                         ; Extra                        ; Normal        ; --          ; --             ;
-; PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION           ; On                           ; Off           ; --          ; --             ;
-; PHYSICAL_SYNTHESIS_REGISTER_RETIMING              ; On                           ; Off           ; --          ; --             ;
-; PLACEMENT_EFFORT_MULTIPLIER                       ; 10                           ; 1.0           ; --          ; --             ;
-; POWER_AUTO_COMPUTE_TJ                             ; Off                          ; On            ; --          ; --             ;
-; POWER_TJ_VALUE                                    ; 85                           ; 25            ; --          ; --             ;
-; REMOVE_REDUNDANT_LOGIC_CELLS                      ; On                           ; Off           ; --          ; --             ;
-; ROUTER_EFFORT_MULTIPLIER                          ; 10                           ; 1.0           ; --          ; --             ;
-; ROUTER_TIMING_OPTIMIZATION_LEVEL                  ; MAXIMUM                      ; Normal        ; --          ; --             ;
-; SAVE_DISK_SPACE                                   ; Off                          ; On            ; --          ; --             ;
-; SMART_RECOMPILE                                   ; On                           ; Off           ; --          ; --             ;
-; SYNTH_TIMING_DRIVEN_SYNTHESIS                     ; On                           ; Off           ; --          ; --             ;
-; TIMEQUEST_DO_REPORT_TIMING                        ; On                           ; Off           ; --          ; --             ;
-; USE_SIGNALTAP_FILE                                ; Debug.stp                    ; --            ; --          ; --             ;
-+---------------------------------------------------+------------------------------+---------------+-------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                      ;
++---------------------------------------------------+------------------------------+---------------+-------------+----------------------+
+; Assignment Name                                   ; Value                        ; Default Value ; Entity Name ; Section Id           ;
++---------------------------------------------------+------------------------------+---------------+-------------+----------------------+
+; ADD_PASS_THROUGH_LOGIC_TO_INFERRED_RAMS           ; Off                          ; On            ; --          ; --                   ;
+; ALLOW_ANY_RAM_SIZE_FOR_RECOGNITION                ; On                           ; Off           ; --          ; --                   ;
+; ALLOW_ANY_ROM_SIZE_FOR_RECOGNITION                ; On                           ; Off           ; --          ; --                   ;
+; AUTO_RAM_TO_LCELL_CONVERSION                      ; On                           ; Off           ; --          ; --                   ;
+; COMPILER_SIGNATURE_ID                             ; 136298991064.144573939701464 ; --            ; --          ; --                   ;
+; CYCLONEII_OPTIMIZATION_TECHNIQUE                  ; Speed                        ; Balanced      ; --          ; --                   ;
+; EDA_DESIGN_INSTANCE_NAME                          ; NA                           ; --            ; --          ; dprf_testbench       ;
+; EDA_DESIGN_INSTANCE_NAME                          ; NA                           ; --            ; --          ; alu_testbench        ;
+; EDA_DESIGN_INSTANCE_NAME                          ; NA                           ; --            ; --          ; controller_testbench ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH              ; controller_testbench         ; --            ; --          ; eda_simulation       ;
+; EDA_OUTPUT_DATA_FORMAT                            ; Verilog Hdl                  ; --            ; --          ; eda_simulation       ;
+; EDA_SIMULATION_TOOL                               ; ModelSim-Altera (Verilog)    ; <None>        ; --          ; --                   ;
+; EDA_TEST_BENCH_ENABLE_STATUS                      ; TEST_BENCH_MODE              ; --            ; --          ; eda_simulation       ;
+; EDA_TEST_BENCH_FILE                               ; dprf_testbench.v             ; --            ; --          ; dprf_testbench       ;
+; EDA_TEST_BENCH_FILE                               ; alu_testbench.v              ; --            ; --          ; alu_testbench        ;
+; EDA_TEST_BENCH_FILE                               ; controller_testbench.v       ; --            ; --          ; controller_testbench ;
+; EDA_TEST_BENCH_MODULE_NAME                        ; dprf_testbench               ; --            ; --          ; dprf_testbench       ;
+; EDA_TEST_BENCH_MODULE_NAME                        ; alu_testbench                ; --            ; --          ; alu_testbench        ;
+; EDA_TEST_BENCH_MODULE_NAME                        ; controller_testbench         ; --            ; --          ; controller_testbench ;
+; EDA_TEST_BENCH_NAME                               ; dprf_testbench               ; --            ; --          ; eda_simulation       ;
+; EDA_TEST_BENCH_NAME                               ; alu_testbench                ; --            ; --          ; eda_simulation       ;
+; EDA_TEST_BENCH_NAME                               ; controller_testbench         ; --            ; --          ; eda_simulation       ;
+; EDA_TIME_SCALE                                    ; 1 ps                         ; --            ; --          ; eda_simulation       ;
+; ENABLE_SIGNALTAP                                  ; Off                          ; --            ; --          ; --                   ;
+; FITTER_EFFORT                                     ; Standard Fit                 ; Auto Fit      ; --          ; --                   ;
+; IP_TOOL_NAME                                      ; ALTPLL                       ; --            ; --          ; --                   ;
+; IP_TOOL_VERSION                                   ; 13.0                         ; --            ; --          ; --                   ;
+; MAX_CORE_JUNCTION_TEMP                            ; 85                           ; --            ; --          ; --                   ;
+; MIN_CORE_JUNCTION_TEMP                            ; 0                            ; --            ; --          ; --                   ;
+; MISC_FILE                                         ; Lectures.dpf                 ; --            ; --          ; --                   ;
+; MISC_FILE                                         ; PLL_inst.v                   ; --            ; --          ; --                   ;
+; MISC_FILE                                         ; PLL_bb.v                     ; --            ; --          ; --                   ;
+; MISC_FILE                                         ; PLL.ppf                      ; --            ; --          ; --                   ;
+; PARTITION_COLOR                                   ; 16764057                     ; --            ; --          ; Top                  ;
+; PARTITION_FITTER_PRESERVATION_LEVEL               ; PLACEMENT_AND_ROUTING        ; --            ; --          ; Top                  ;
+; PARTITION_NETLIST_TYPE                            ; SOURCE                       ; --            ; --          ; Top                  ;
+; PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING ; On                           ; Off           ; --          ; --                   ;
+; PHYSICAL_SYNTHESIS_COMBO_LOGIC                    ; On                           ; Off           ; --          ; --                   ;
+; PHYSICAL_SYNTHESIS_EFFORT                         ; Extra                        ; Normal        ; --          ; --                   ;
+; PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION           ; On                           ; Off           ; --          ; --                   ;
+; PHYSICAL_SYNTHESIS_REGISTER_RETIMING              ; On                           ; Off           ; --          ; --                   ;
+; PLACEMENT_EFFORT_MULTIPLIER                       ; 10                           ; 1.0           ; --          ; --                   ;
+; POWER_AUTO_COMPUTE_TJ                             ; Off                          ; On            ; --          ; --                   ;
+; POWER_TJ_VALUE                                    ; 85                           ; 25            ; --          ; --                   ;
+; REMOVE_REDUNDANT_LOGIC_CELLS                      ; On                           ; Off           ; --          ; --                   ;
+; ROUTER_EFFORT_MULTIPLIER                          ; 10                           ; 1.0           ; --          ; --                   ;
+; ROUTER_TIMING_OPTIMIZATION_LEVEL                  ; MAXIMUM                      ; Normal        ; --          ; --                   ;
+; SAVE_DISK_SPACE                                   ; Off                          ; On            ; --          ; --                   ;
+; SMART_RECOMPILE                                   ; On                           ; Off           ; --          ; --                   ;
+; SYNTH_TIMING_DRIVEN_SYNTHESIS                     ; On                           ; Off           ; --          ; --                   ;
+; TIMEQUEST_DO_REPORT_TIMING                        ; On                           ; Off           ; --          ; --                   ;
+; USE_SIGNALTAP_FILE                                ; Debug.stp                    ; --            ; --          ; --                   ;
++---------------------------------------------------+------------------------------+---------------+-------------+----------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -131,12 +135,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 516 MB              ; 00:00:07                           ;
-; Fitter                    ; 00:00:29     ; 1.0                     ; 737 MB              ; 00:00:29                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 446 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 437 MB              ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 494 MB              ; 00:00:07                           ;
+; Fitter                    ; 00:00:28     ; 1.0                     ; 743 MB              ; 00:00:27                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 442 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 448 MB              ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 415 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:41     ; --                      ; --                  ; 00:00:41                           ;
+; Total                     ; 00:00:41     ; --                      ; --                  ; 00:00:39                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

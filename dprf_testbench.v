@@ -30,7 +30,6 @@ module dprf_testbench;
 	reg[3:0] regsel_dest, regsel_source0, regsel_source1;
 	reg[31:0] datain;
 	wire[31:0] dataout0, dataout1;
-	
 
 	// Instantiate the Unit Under Test
 	DPRF dprf(clk, reset, we, regsel_dest, regsel_source0, regsel_source1, datain, dataout0, dataout1);
