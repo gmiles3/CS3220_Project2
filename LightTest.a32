@@ -8,8 +8,9 @@ Face:
     ; Display 0xFF on LEDG
     mvhi	gp,IOBASE
     andi	s0,s0,0
-    addi	t0,s0,0xFF
+    addi	t0,s0,1
     sw		t0,OFSLEDG(gp)
+	bt		t0, t0, Face
 ; Display 0xFACE on HEX
     andi	s0,s0,0
     addi	t0,s0,0xFACE

@@ -1,0 +1,42 @@
+.NAME   IOBASE= 0xF0000000
+.NAME	OFSHEX= 0x00000000
+.NAME	OFSLEDR=0x00000004
+.NAME	OFSLEDG=0x00000008
+
+	; This should never be executed
+	.ORIG 0
+	bt			t0,t0,AtZero
+	addi		s1,s1,0x1
+	addi		s1,s1,0x1
+	addi		s1,s1,0x1
+	addi		s1,s1,0x1
+	addi		s1,s1,0x1
+	addi		s1,s1,0x1
+	addi		s1,s1,0x1
+	addi		s1,s1,0x1
+AtZero:
+	; Turn on LEDR, display 0xBAD on HEX
+	mvhi	gp,IOBASE
+	andi	s0,s0,0
+	not		t0,s0
+	sw		t0,OFSLEDR(gp)
+	addi	t0,s0,0xBAD
+	sw		t0,OFSHEX(gp)
+	;bt		t0,t0,AtZero
+
+    .ORIG 0x40
+	addi	s2,s0,0x0BEF
+	; Our FP register will be zero
+	xor		fp,fp,fp
+	; Prepare the gp register
+	mvhi	gp,IOBASE
+	; Put 1 on LEDG and turn off LEDR
+	mvhi	s0,0
+	addi	s0,s0,1
+	sw		s0,OFSLEDG(gp)
+	sw		fp,OFSLEDR(gp)
+	; Put 2 on LEDG, LEDR should still be off
+	addi	s0,s0,1
+Loop:
+	sw		s0,OFSLEDG(gp)
+	bt		t0,t0,Loop
