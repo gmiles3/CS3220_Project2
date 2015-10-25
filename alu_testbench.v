@@ -31,7 +31,8 @@ module alu_testbench;
 	reg[31:0] A, B;
 	reg signed[31:0] Expected;
 	wire signed[31:0] out;
-	parameter ADD=0, SUB=1, AND=2, OR=3, XOR=4, NAND=5, NOR=6, XNOR=7, MVHI=8;
+	parameter ADD=6'h00, SUB=6'h01, AND=6'h02, OR=6'h03, XOR=6'h04, NAND=6'h05, NOR=6'h06, XNOR=6'h07, MVHI=6'h08;
+	parameter F=6'h10, EQ=6'h11, LT=6'h12, LTE=6'h13, EQZ=6'h15, LTZ=6'h16, LTEZ=6'h17, T=6'h18, NE=6'h19, GTE=6'h1A, GT=6'h1B, NEZ=6'h1D, GTEZ=6'h1E, GTZ=6'h1F;
 	
 
 	// Instantiate the Unit Under Test
@@ -49,7 +50,7 @@ module alu_testbench;
 		
 	initial begin
 		#100;
-		$monitor("%0t\tClk: %d\tOpsel: %d\tA: %d\tB: %d\tExpected: %d\tOut: %d", $time, clk, opsel, A, B, Expected, out);
+		$monitor("%0t\tOpsel: %h\tA: %d\tB: %d\tExpected: %d\tOut: %d", $time, opsel, A, B, Expected, out);
 		A = 20;
 		B = 17;
 		Expected = 37;
@@ -75,6 +76,41 @@ module alu_testbench;
 		#200;
 		Expected = 1179642;
 		opsel = MVHI;
+		#200;
+		Expected = 0;
+		opsel = F;
+		#200;
+		
+		Expected = 0;
+		opsel = EQ;
+		#200;
+		Expected = 1;
+		B=20;
+		
+		#200;
+		Expected = 0;
+		opsel = LT;
+		#200;
+		B=17;
+		#200;
+		Expected = 1;
+		B=21;
+		#200;
+		A=-21;
+		
+		#200;
+		Expected=1;
+		opsel = LTE;
+		#200;
+		A=21;
+		#200;
+		Expected=0;
+		A=22;
+		#200;
+		
+		opsel = EQZ;
+		#200;
+		opsel = LTZ;
 		#200 $finish;
 	end
       

@@ -71,21 +71,17 @@
 # Top level modules:
 # 	InstMemory
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs {C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/alu_testbench.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module controller_testbench
+# -- Compiling module alu_testbench
 # 
 # Top level modules:
-# 	controller_testbench
+# 	alu_testbench
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  controller_testbench
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps controller_testbench 
-# Loading work.controller_testbench
-# Loading work.Controller
-# Loading work.SignExtension
-# ** Warning: (vsim-3015) C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v(10): [PCDPC] - Port size (6 or 6) does not match connection size (1) for port 'selALUop'. The port definition is at: C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Controller.v(10).
-# 
-#         Region: /controller_testbench/controller
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  alu_testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps alu_testbench 
+# Loading work.alu_testbench
+# Loading work.ALU
 # 
 # add wave *
 # view structure
@@ -93,27 +89,30 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# 100000	pcOut:         64	instWord: 3236954296	selRegRead1:          0	selRegRead2:         14	selRegWrite:         12	imm: 4294963200	pcNext: 1	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 00
-# 200000	pcOut:         64	instWord:          0	selRegRead1:          0	selRegRead2:         14	selRegWrite:         12	imm: 4294963200	pcNext: 1	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 00
-# 205000	pcOut:         64	instWord:          0	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 10
-# 300000	pcOut:         64	instWord:          8	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 10
-# 305000	pcOut:         64	instWord:          8	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 00
-# 400000	pcOut:         64	instWord:          9	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 00
-# 405000	pcOut:         64	instWord:          9	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 01
-# 500000	pcOut:         64	instWord:          5	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 01
-# 505000	pcOut:         64	instWord:          5	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 0	aluSrcIsReg: 1	memToReg: 00
-# 600000	pcOut:         64	instWord:          2	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 0	aluSrcIsReg: 1	memToReg: 00
-# 605000	pcOut:         64	instWord:          2	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 10
-# 700000	pcOut:         64	instWord:         10	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 10
-# 705000	pcOut:         64	instWord:         10	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 00
-# 800000	pcOut:         64	instWord:          6	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 00
-# 805000	pcOut:         64	instWord:          6	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 1	enMemWrite: 0	aluSrcIsReg: 0	memToReg: 00
-# 900000	pcOut:         64	instWord:         11	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 1	enMemWrite: 0	aluSrcIsReg: 0	memToReg: 00
-# 905000	pcOut:         64	instWord:         11	selRegRead1:          0	selRegRead2:          0	selRegWrite:          0	imm:          0	pcNext: 0	enBranch:         68	enRegWrite: 0	enMemWrite: 1	aluSrcIsReg: 0	memToReg: 00
-# ** Note: $finish    : C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v(41)
-#    Time: 1 us  Iteration: 0  Instance: /controller_testbench
+# 100000	Opsel: 00	A:         20	B:         17	Expected:          37	Out:          37
+# 300000	Opsel: 01	A:         20	B:         17	Expected:           3	Out:           3
+# 500000	Opsel: 03	A:         20	B:         17	Expected:          21	Out:           3
+# 700000	Opsel: 04	A:         20	B:         17	Expected:           5	Out:          16
+# 900000	Opsel: 05	A:         20	B:         17	Expected:         -17	Out:          21
+# 1100000	Opsel: 06	A:         20	B:         17	Expected:         -22	Out:           5
+# 1300000	Opsel: 07	A:         20	B:         17	Expected:          -6	Out:           5
+# 1500000	Opsel: 08	A:         20	B:         17	Expected:     1179642	Out:           5
+# 1700000	Opsel: 10	A:         20	B:         17	Expected:           0	Out:           0
+# 1900000	Opsel: 11	A:         20	B:         17	Expected:           0	Out:           0
+# 2100000	Opsel: 11	A:         20	B:         20	Expected:           1	Out:           1
+# 2300000	Opsel: 12	A:         20	B:         20	Expected:           0	Out:           0
+# 2500000	Opsel: 12	A:         20	B:         17	Expected:           0	Out:           0
+# 2700000	Opsel: 12	A:         20	B:         21	Expected:           1	Out:           1
+# 2900000	Opsel: 12	A: 4294967275	B:         21	Expected:           1	Out:           1
+# 3100000	Opsel: 13	A: 4294967275	B:         21	Expected:           1	Out:           1
+# 3300000	Opsel: 13	A:         21	B:         21	Expected:           1	Out:           1
+# 3500000	Opsel: 13	A:         22	B:         21	Expected:           0	Out:           0
+# 3700000	Opsel: 15	A:         22	B:         21	Expected:           0	Out:           0
+# 3900000	Opsel: 16	A:         22	B:         21	Expected:           0	Out:           0
+# ** Note: $finish    : C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/alu_testbench.v(114)
+#    Time: 4100 ns  Iteration: 0  Instance: /alu_testbench
 # 1
-# Break in Module controller_testbench at C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v line 41
+# Break in Module alu_testbench at C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/alu_testbench.v line 114
 # Simulation Breakpoint: 1
-# Break in Module controller_testbench at C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/controller_testbench.v line 41
+# Break in Module alu_testbench at C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/alu_testbench.v line 114
 # MACRO ./Project2_run_msim_rtl_verilog.do PAUSED at line 26
