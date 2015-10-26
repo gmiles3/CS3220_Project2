@@ -56,7 +56,7 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	assign pcNext = pcOut + 4;
 	assign regIn = isJal ? pcNext : (fromMem ? memOut : aluOut);
 	assign aluSrc = useImm ? imm : regOut2;
-	assign pcIn = (isJal ? regOut1 : pcNext) + (((isBranch && aluOut) || isJal) ? (imm * 4) : 0);
+	assign pcIn = isJal ? aluOut : ((isBranch && aluOut) ? pcNext + (imm * 4) : pcNext);
 	
 	SevenSeg hex0(hex[3:0], HEX0);
 	SevenSeg hex1(hex[7:4], HEX1);

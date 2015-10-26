@@ -1,5 +1,5 @@
 Flow report for Project2
-Sun Oct 25 23:02:01 2015
+Sun Oct 25 23:13:12 2015
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sun Oct 25 23:02:01 2015           ;
+; Flow Status                        ; Successful - Sun Oct 25 23:13:12 2015           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Project2                                        ;
 ; Top-level Entity Name              ; Project2                                        ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C20F484C7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 2,007 / 18,752 ( 11 % )                         ;
-;     Total combinational functions  ; 1,733 / 18,752 ( 9 % )                          ;
+; Total logic elements               ; 2,053 / 18,752 ( 11 % )                         ;
+;     Total combinational functions  ; 1,743 / 18,752 ( 9 % )                          ;
 ;     Dedicated logic registers      ; 604 / 18,752 ( 3 % )                            ;
 ; Total registers                    ; 604                                             ;
 ; Total pins                         ; 61 / 315 ( 19 % )                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/25/2015 23:00:38 ;
+; Start date & time ; 10/25/2015 23:11:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Project2            ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ applicable agreement for further details.
 ; ALLOW_ANY_RAM_SIZE_FOR_RECOGNITION                ; On                           ; Off           ; --          ; --                   ;
 ; ALLOW_ANY_ROM_SIZE_FOR_RECOGNITION                ; On                           ; Off           ; --          ; --                   ;
 ; AUTO_RAM_TO_LCELL_CONVERSION                      ; On                           ; Off           ; --          ; --                   ;
-; COMPILER_SIGNATURE_ID                             ; 136298991064.144582843704820 ; --            ; --          ; --                   ;
+; COMPILER_SIGNATURE_ID                             ; 136298991064.144582910409824 ; --            ; --          ; --                   ;
 ; CYCLONEII_OPTIMIZATION_TECHNIQUE                  ; Speed                        ; Balanced      ; --          ; --                   ;
 ; EDA_DESIGN_INSTANCE_NAME                          ; NA                           ; --            ; --          ; dprf_testbench       ;
 ; EDA_DESIGN_INSTANCE_NAME                          ; NA                           ; --            ; --          ; alu_testbench        ;
@@ -135,12 +135,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 501 MB              ; 00:00:17                           ;
-; Fitter                    ; 00:00:55     ; 1.0                     ; 759 MB              ; 00:00:55                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 434 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 473 MB              ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 498 MB              ; 00:00:18                           ;
+; Fitter                    ; 00:00:59     ; 1.0                     ; 744 MB              ; 00:00:59                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 434 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 461 MB              ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 414 MB              ; 00:00:02                           ;
-; Total                     ; 00:01:19     ; --                      ; --                  ; 00:01:18                           ;
+; Total                     ; 00:01:24     ; --                      ; --                  ; 00:01:23                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
