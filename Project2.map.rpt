@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project2
-Sun Oct 25 22:09:05 2015
+Sun Oct 25 23:00:55 2015
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,44 +16,41 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. Registers Removed During Synthesis
- 11. Removed Registers Triggering Further Register Optimizations
- 12. General Register Statistics
- 13. Registers Packed Into Inferred Megafunctions
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for DataMemory:datamem|altsyncram:data_rtl_0|altsyncram_bq61:auto_generated
- 16. Source assignments for Controller:ctrl|altsyncram:WideOr0_rtl_0|altsyncram_mgv:auto_generated
- 17. Parameter Settings for User Entity Instance: Top-level Entity: |Project2
- 18. Parameter Settings for User Entity Instance: PLL:PLL_inst|altpll:altpll_component
- 19. Parameter Settings for User Entity Instance: Register:pc
- 20. Parameter Settings for User Entity Instance: InstMemory:instMem
- 21. Parameter Settings for User Entity Instance: Controller:ctrl
- 22. Parameter Settings for User Entity Instance: Controller:ctrl|SignExtension:imm_sinex
- 23. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg0
- 24. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg1
- 25. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg2
- 26. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg3
- 27. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg4
- 28. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg5
- 29. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg6
- 30. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg7
- 31. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg8
- 32. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg9
- 33. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg10
- 34. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg11
- 35. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg12
- 36. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg13
- 37. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg14
- 38. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg15
- 39. Parameter Settings for User Entity Instance: ALU:alu
- 40. Parameter Settings for User Entity Instance: DataMemory:datamem
- 41. Parameter Settings for Inferred Entity Instance: DataMemory:datamem|altsyncram:data_rtl_0
- 42. Parameter Settings for Inferred Entity Instance: Controller:ctrl|altsyncram:WideOr0_rtl_0
- 43. altpll Parameter Settings by Entity Instance
- 44. altsyncram Parameter Settings by Entity Instance
- 45. Port Connectivity Checks: "Register:pc"
- 46. Elapsed Time Per Partition
- 47. Analysis & Synthesis Messages
- 48. Analysis & Synthesis Suppressed Messages
+ 11. General Register Statistics
+ 12. Registers Packed Into Inferred Megafunctions
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for DataMemory:datamem|altsyncram:data_rtl_0|altsyncram_5b61:auto_generated
+ 15. Parameter Settings for User Entity Instance: Top-level Entity: |Project2
+ 16. Parameter Settings for User Entity Instance: PLL:PLL_inst|altpll:altpll_component
+ 17. Parameter Settings for User Entity Instance: Register:pc
+ 18. Parameter Settings for User Entity Instance: InstMemory:instMem
+ 19. Parameter Settings for User Entity Instance: Controller:ctrl
+ 20. Parameter Settings for User Entity Instance: Controller:ctrl|SignExtension:imm_sinex
+ 21. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg0
+ 22. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg1
+ 23. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg2
+ 24. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg3
+ 25. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg4
+ 26. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg5
+ 27. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg6
+ 28. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg7
+ 29. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg8
+ 30. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg9
+ 31. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg10
+ 32. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg11
+ 33. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg12
+ 34. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg13
+ 35. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg14
+ 36. Parameter Settings for User Entity Instance: DPRF:dprf|Register:reg15
+ 37. Parameter Settings for User Entity Instance: ALU:alu
+ 38. Parameter Settings for User Entity Instance: DataMemory:datamem
+ 39. Parameter Settings for Inferred Entity Instance: DataMemory:datamem|altsyncram:data_rtl_0
+ 40. altpll Parameter Settings by Entity Instance
+ 41. altsyncram Parameter Settings by Entity Instance
+ 42. Port Connectivity Checks: "Register:pc"
+ 43. Elapsed Time Per Partition
+ 44. Analysis & Synthesis Messages
+ 45. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -79,18 +76,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 25 22:09:05 2015           ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 25 23:00:55 2015           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Project2                                        ;
 ; Top-level Entity Name              ; Project2                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 1,289                                           ;
-;     Total combinational functions  ; 1,035                                           ;
-;     Dedicated logic registers      ; 394                                             ;
-; Total registers                    ; 394                                             ;
+; Total logic elements               ; 2,237                                           ;
+;     Total combinational functions  ; 1,729                                           ;
+;     Dedicated logic registers      ; 592                                             ;
+; Total registers                    ; 592                                             ;
 ; Total pins                         ; 61                                              ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 65,552                                          ;
+; Total memory bits                  ; 65,536                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
 ; Total PLLs                         ; 1                                               ;
 +------------------------------------+-------------------------------------------------+
@@ -192,39 +189,37 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                         ;
-+----------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                            ; Library ;
-+----------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------+---------+
-; SignExtension.v                  ; yes             ; User Verilog HDL File                                 ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/SignExtension.v               ;         ;
-; LightTest.mif                    ; yes             ; User Memory Initialization File                       ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/LightTest.mif                 ;         ;
-; DataMemory.v                     ; yes             ; User Verilog HDL File                                 ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/DataMemory.v                  ;         ;
-; DPRF.v                           ; yes             ; User Verilog HDL File                                 ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/DPRF.v                        ;         ;
-; ALU.v                            ; yes             ; User Verilog HDL File                                 ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/ALU.v                         ;         ;
-; Project2.v                       ; yes             ; User Verilog HDL File                                 ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2.v                    ;         ;
-; SevenSeg.v                       ; yes             ; User Verilog HDL File                                 ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/SevenSeg.v                    ;         ;
-; PLL.v                            ; yes             ; User Wizard-Generated File                            ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/PLL.v                         ;         ;
-; Controller.v                     ; yes             ; User Verilog HDL File                                 ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Controller.v                  ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf                            ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                        ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc                       ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc                     ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc                     ;         ;
-; register.v                       ; yes             ; Auto-Found Verilog HDL File                           ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/register.v                    ;         ;
-; instmemory.v                     ; yes             ; Auto-Found Verilog HDL File                           ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/instmemory.v                  ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                 ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                            ;         ;
-; altram.inc                       ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                          ;         ;
-; db/altsyncram_bq61.tdf           ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/db/altsyncram_bq61.tdf        ;         ;
-; db/altsyncram_mgv.tdf            ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/db/altsyncram_mgv.tdf         ;         ;
-; Project2.Project20.rtl.mif       ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/db/Project2.Project20.rtl.mif ;         ;
-+----------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+----------------------------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+----------------------------------+----------------------------------------------------------------------------------+---------+
+; SignExtension.v                  ; yes             ; User Verilog HDL File            ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/SignExtension.v        ;         ;
+; DataMemory.v                     ; yes             ; User Verilog HDL File            ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/DataMemory.v           ;         ;
+; DPRF.v                           ; yes             ; User Verilog HDL File            ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/DPRF.v                 ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File            ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/ALU.v                  ;         ;
+; Project2.v                       ; yes             ; User Verilog HDL File            ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2.v             ;         ;
+; Test2.mif                        ; yes             ; User Memory Initialization File  ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Test2.mif              ;         ;
+; SevenSeg.v                       ; yes             ; User Verilog HDL File            ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/SevenSeg.v             ;         ;
+; PLL.v                            ; yes             ; User Wizard-Generated File       ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/PLL.v                  ;         ;
+; Controller.v                     ; yes             ; User Verilog HDL File            ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Controller.v           ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf                     ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                 ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc                ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc              ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc              ;         ;
+; register.v                       ; yes             ; Auto-Found Verilog HDL File      ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/register.v             ;         ;
+; instmemory.v                     ; yes             ; Auto-Found Verilog HDL File      ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/instmemory.v           ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                 ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc          ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                    ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                 ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                  ;         ;
+; altrom.inc                       ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                     ;         ;
+; altram.inc                       ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                     ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                   ;         ;
+; db/altsyncram_5b61.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/db/altsyncram_5b61.tdf ;         ;
++----------------------------------+-----------------+----------------------------------+----------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------------+
@@ -232,32 +227,32 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------------------------------------------+
 ; Resource                                    ; Usage                                      ;
 +---------------------------------------------+--------------------------------------------+
-; Estimated Total logic elements              ; 1,289                                      ;
+; Estimated Total logic elements              ; 2,237                                      ;
 ;                                             ;                                            ;
-; Total combinational functions               ; 1035                                       ;
+; Total combinational functions               ; 1729                                       ;
 ; Logic element usage by number of LUT inputs ;                                            ;
-;     -- 4 input functions                    ; 663                                        ;
-;     -- 3 input functions                    ; 271                                        ;
-;     -- <=2 input functions                  ; 101                                        ;
+;     -- 4 input functions                    ; 1480                                       ;
+;     -- 3 input functions                    ; 188                                        ;
+;     -- <=2 input functions                  ; 61                                         ;
 ;                                             ;                                            ;
 ; Logic elements by mode                      ;                                            ;
-;     -- normal mode                          ; 825                                        ;
-;     -- arithmetic mode                      ; 210                                        ;
+;     -- normal mode                          ; 1580                                       ;
+;     -- arithmetic mode                      ; 149                                        ;
 ;                                             ;                                            ;
-; Total registers                             ; 394                                        ;
-;     -- Dedicated logic registers            ; 394                                        ;
+; Total registers                             ; 592                                        ;
+;     -- Dedicated logic registers            ; 592                                        ;
 ;     -- I/O registers                        ; 0                                          ;
 ;                                             ;                                            ;
 ; I/O pins                                    ; 61                                         ;
-; Total memory bits                           ; 65552                                      ;
+; Total memory bits                           ; 65536                                      ;
 ; Embedded Multiplier 9-bit elements          ; 0                                          ;
 ; Total PLLs                                  ; 1                                          ;
 ;     -- PLLs                                 ; 1                                          ;
 ;                                             ;                                            ;
 ; Maximum fan-out node                        ; PLL:PLL_inst|altpll:altpll_component|_clk0 ;
-; Maximum fan-out                             ; 467                                        ;
-; Total fan-out                               ; 5280                                       ;
-; Average fan-out                             ; 3.46                                       ;
+; Maximum fan-out                             ; 675                                        ;
+; Total fan-out                               ; 8869                                       ;
+; Average fan-out                             ; 3.67                                       ;
 +---------------------------------------------+--------------------------------------------+
 
 
@@ -266,27 +261,33 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                               ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+--------------+
-; |Project2                                 ; 1035 (110)        ; 394 (0)      ; 65552       ; 0            ; 0       ; 0         ; 61   ; 0            ; |Project2                                                                         ; work         ;
-;    |ALU:alu|                              ; 455 (455)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|ALU:alu                                                                 ; work         ;
-;    |Controller:ctrl|                      ; 43 (43)           ; 58 (58)      ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|Controller:ctrl                                                         ; work         ;
-;       |altsyncram:WideOr0_rtl_0|          ; 0 (0)             ; 0 (0)        ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|Controller:ctrl|altsyncram:WideOr0_rtl_0                                ; work         ;
-;          |altsyncram_mgv:auto_generated|  ; 0 (0)             ; 0 (0)        ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|Controller:ctrl|altsyncram:WideOr0_rtl_0|altsyncram_mgv:auto_generated  ; work         ;
-;    |DPRF:dprf|                            ; 325 (256)         ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf                                                               ; work         ;
-;       |Register:reg0|                     ; 61 (61)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg0                                                 ; work         ;
+; |Project2                                 ; 1729 (159)        ; 592 (0)      ; 65536       ; 0            ; 0       ; 0         ; 61   ; 0            ; |Project2                                                                         ; work         ;
+;    |ALU:alu|                              ; 347 (347)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|ALU:alu                                                                 ; work         ;
+;    |Controller:ctrl|                      ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|Controller:ctrl                                                         ; work         ;
+;    |DPRF:dprf|                            ; 740 (651)         ; 512 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf                                                               ; work         ;
+;       |Register:reg0|                     ; 72 (72)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg0                                                 ; work         ;
 ;       |Register:reg10|                    ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg10                                                ; work         ;
+;       |Register:reg11|                    ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg11                                                ; work         ;
 ;       |Register:reg12|                    ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg12                                                ; work         ;
+;       |Register:reg13|                    ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg13                                                ; work         ;
 ;       |Register:reg14|                    ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg14                                                ; work         ;
-;       |Register:reg2|                     ; 2 (2)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg2                                                 ; work         ;
+;       |Register:reg15|                    ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg15                                                ; work         ;
+;       |Register:reg1|                     ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg1                                                 ; work         ;
+;       |Register:reg2|                     ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg2                                                 ; work         ;
+;       |Register:reg3|                     ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg3                                                 ; work         ;
 ;       |Register:reg4|                     ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg4                                                 ; work         ;
+;       |Register:reg5|                     ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg5                                                 ; work         ;
 ;       |Register:reg6|                     ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg6                                                 ; work         ;
+;       |Register:reg7|                     ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg7                                                 ; work         ;
 ;       |Register:reg8|                     ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg8                                                 ; work         ;
+;       |Register:reg9|                     ; 3 (3)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg9                                                 ; work         ;
 ;    |DataMemory:datamem|                   ; 10 (10)           ; 48 (48)      ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DataMemory:datamem                                                      ; work         ;
 ;       |altsyncram:data_rtl_0|             ; 0 (0)             ; 0 (0)        ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DataMemory:datamem|altsyncram:data_rtl_0                                ; work         ;
-;          |altsyncram_bq61:auto_generated| ; 0 (0)             ; 0 (0)        ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DataMemory:datamem|altsyncram:data_rtl_0|altsyncram_bq61:auto_generated ; work         ;
-;    |InstMemory:instMem|                   ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|InstMemory:instMem                                                      ; work         ;
+;          |altsyncram_5b61:auto_generated| ; 0 (0)             ; 0 (0)        ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DataMemory:datamem|altsyncram:data_rtl_0|altsyncram_5b61:auto_generated ; work         ;
+;    |InstMemory:instMem|                   ; 395 (395)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|InstMemory:instMem                                                      ; work         ;
 ;    |PLL:PLL_inst|                         ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|PLL:PLL_inst                                                            ; work         ;
 ;       |altpll:altpll_component|           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|PLL:PLL_inst|altpll:altpll_component                                    ; work         ;
-;    |Register:pc|                          ; 32 (32)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|Register:pc                                                             ; work         ;
+;    |Register:pc|                          ; 33 (33)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|Register:pc                                                             ; work         ;
 ;    |SevenSeg:hex0|                        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|SevenSeg:hex0                                                           ; work         ;
 ;    |SevenSeg:hex1|                        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|SevenSeg:hex1                                                           ; work         ;
 ;    |SevenSeg:hex2|                        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|SevenSeg:hex2                                                           ; work         ;
@@ -295,14 +296,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                         ;
-+------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+----------------------------+
-; Name                                                                               ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                        ;
-+------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+----------------------------+
-; Controller:ctrl|altsyncram:WideOr0_rtl_0|altsyncram_mgv:auto_generated|ALTSYNCRAM  ; AUTO ; ROM         ; 16           ; 1            ; --           ; --           ; 16    ; Project2.Project20.rtl.mif ;
-; DataMemory:datamem|altsyncram:data_rtl_0|altsyncram_bq61:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 2048         ; 32           ; --           ; --           ; 65536 ; LightTest.mif              ;
-+------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+----------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                        ;
++------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-----------+
+; Name                                                                               ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF       ;
++------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-----------+
+; DataMemory:datamem|altsyncram:data_rtl_0|altsyncram_5b61:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 2048         ; 32           ; --           ; --           ; 65536 ; Test2.mif ;
++------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-----------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -314,417 +314,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+------------------------+-----------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                ;
-+-----------------------------------------+-----------------------------------------+
-; Register name                           ; Reason for Removal                      ;
-+-----------------------------------------+-----------------------------------------+
-; DataMemory:datamem|key_reg[4..31]       ; Stuck at GND due to stuck port data_in  ;
-; DataMemory:datamem|sw_reg[10..31]       ; Stuck at GND due to stuck port data_in  ;
-; Controller:ctrl|immSign[16..31]         ; Merged with Controller:ctrl|immSign[15] ;
-; Controller:ctrl|r1[0]                   ; Stuck at GND due to stuck port data_in  ;
-; Controller:ctrl|rd[0]                   ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[0]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[0]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[0]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[0]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[0]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[0]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[0]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[0]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[31]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[31]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[31]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[31]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[31]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[31]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[31]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[31]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[30]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[30]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[30]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[30]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[30]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[30]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[30]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[30]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[29]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[29]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[29]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[29]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[29]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[29]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[29]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[29]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[28]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[28]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[28]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[28]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[28]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[28]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[28]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[28]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[27]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[27]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[27]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[27]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[27]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[27]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[27]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[27]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[26]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[26]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[26]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[26]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[26]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[26]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[26]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[26]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[25]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[25]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[25]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[25]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[25]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[25]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[25]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[25]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[24]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[24]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[24]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[24]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[24]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[24]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[24]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[24]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[23]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[23]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[23]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[23]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[23]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[23]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[23]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[23]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[22]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[22]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[22]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[22]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[22]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[22]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[22]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[22]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[21]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[21]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[21]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[21]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[21]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[21]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[21]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[21]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[20]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[20]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[20]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[20]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[20]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[20]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[20]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[20]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[19]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[19]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[19]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[19]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[19]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[19]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[19]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[19]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[18]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[18]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[18]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[18]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[18]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[18]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[18]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[18]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[17]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[17]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[17]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[17]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[17]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[17]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[17]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[17]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[16]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[16]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[16]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[16]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[16]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[16]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[16]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[16]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[15]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[15]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[15]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[15]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[15]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[15]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[15]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[15]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[14]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[14]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[14]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[14]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[14]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[14]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[14]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[14]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[13]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[13]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[13]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[13]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[13]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[13]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[13]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[13]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[12]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[12]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[12]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[12]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[12]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[12]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[12]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[12]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[11]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[11]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[11]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[11]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[11]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[11]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[11]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[11]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[10]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[10]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[10]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[10]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[10]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[10]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[10]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[10]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[9]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[9]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[9]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[9]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[9]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[9]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[9]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[9]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[8]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[8]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[8]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[8]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[8]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[8]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[8]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[8]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[7]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[7]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[7]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[7]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[7]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[7]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[7]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[7]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[6]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[6]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[6]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[6]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[6]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[6]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[6]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[6]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[5]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[5]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[5]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[5]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[5]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[5]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[5]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[5]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[4]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[4]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[4]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[4]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[4]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[4]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[4]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[4]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[3]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[3]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[3]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[3]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[3]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[3]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[3]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[3]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[2]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[2]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[2]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[2]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[2]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[2]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[2]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[2]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[1]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[1]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[1]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[1]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[1]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[1]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[1]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[1]     ; Stuck at GND due to stuck port data_in  ;
-; Controller:ctrl|r2[0]                   ; Merged with Controller:ctrl|r2[3]       ;
-; Controller:ctrl|immSign[12..14]         ; Merged with Controller:ctrl|immSign[15] ;
-; Controller:ctrl|immSign[9]              ; Merged with Controller:ctrl|immSign[11] ;
-; Controller:ctrl|immSign[5,8]            ; Merged with Controller:ctrl|immSign[10] ;
-; Controller:ctrl|immSign[6]              ; Merged with Controller:ctrl|immSign[7]  ;
-; Controller:ctrl|immSign[1]              ; Merged with Controller:ctrl|immSign[2]  ;
-; Controller:ctrl|rd[1]                   ; Merged with Controller:ctrl|alufunc[2]  ;
-; Total Number of Removed Registers = 334 ;                                         ;
-+-----------------------------------------+-----------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                             ;
-+--------------------------------+---------------------------+----------------------------------------------------------------------------+
-; Register name                  ; Reason for Removal        ; Registers Removed due to This Register                                     ;
-+--------------------------------+---------------------------+----------------------------------------------------------------------------+
-; Controller:ctrl|r1[0]          ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[0], DPRF:dprf|Register:reg3|dataOut[0],    ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[0], DPRF:dprf|Register:reg7|dataOut[0],    ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[0], DPRF:dprf|Register:reg11|dataOut[0],   ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[0], DPRF:dprf|Register:reg15|dataOut[0],  ;
-;                                ;                           ; DPRF:dprf|Register:reg1|dataOut[3], DPRF:dprf|Register:reg3|dataOut[3],    ;
-;                                ;                           ; DPRF:dprf|Register:reg5|dataOut[3], DPRF:dprf|Register:reg7|dataOut[3],    ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[3], DPRF:dprf|Register:reg11|dataOut[3],   ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[3], DPRF:dprf|Register:reg15|dataOut[3],  ;
-;                                ;                           ; DPRF:dprf|Register:reg1|dataOut[1], DPRF:dprf|Register:reg3|dataOut[1],    ;
-;                                ;                           ; DPRF:dprf|Register:reg5|dataOut[1], DPRF:dprf|Register:reg7|dataOut[1],    ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[1], DPRF:dprf|Register:reg11|dataOut[1],   ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[1], DPRF:dprf|Register:reg15|dataOut[1]   ;
-; DataMemory:datamem|key_reg[4]  ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[4], DPRF:dprf|Register:reg3|dataOut[4],    ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[4], DPRF:dprf|Register:reg7|dataOut[4],    ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[4], DPRF:dprf|Register:reg11|dataOut[4],   ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[4], DPRF:dprf|Register:reg15|dataOut[4]   ;
-; DataMemory:datamem|key_reg[5]  ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[5], DPRF:dprf|Register:reg3|dataOut[5],    ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[5], DPRF:dprf|Register:reg7|dataOut[5],    ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[5], DPRF:dprf|Register:reg11|dataOut[5],   ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[5], DPRF:dprf|Register:reg15|dataOut[5]   ;
-; DataMemory:datamem|key_reg[6]  ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[6], DPRF:dprf|Register:reg3|dataOut[6],    ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[6], DPRF:dprf|Register:reg7|dataOut[6],    ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[6], DPRF:dprf|Register:reg11|dataOut[6],   ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[6], DPRF:dprf|Register:reg15|dataOut[6]   ;
-; DataMemory:datamem|key_reg[7]  ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[7], DPRF:dprf|Register:reg3|dataOut[7],    ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[7], DPRF:dprf|Register:reg7|dataOut[7],    ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[7], DPRF:dprf|Register:reg11|dataOut[7],   ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[7], DPRF:dprf|Register:reg15|dataOut[7]   ;
-; DataMemory:datamem|key_reg[8]  ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[8], DPRF:dprf|Register:reg3|dataOut[8],    ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[8], DPRF:dprf|Register:reg7|dataOut[8],    ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[8], DPRF:dprf|Register:reg11|dataOut[8],   ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[8], DPRF:dprf|Register:reg15|dataOut[8]   ;
-; DataMemory:datamem|key_reg[9]  ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[9], DPRF:dprf|Register:reg3|dataOut[9],    ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[9], DPRF:dprf|Register:reg7|dataOut[9],    ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[9], DPRF:dprf|Register:reg11|dataOut[9],   ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[9], DPRF:dprf|Register:reg15|dataOut[9]   ;
-; DataMemory:datamem|key_reg[10] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[10], DPRF:dprf|Register:reg3|dataOut[10],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[10], DPRF:dprf|Register:reg7|dataOut[10],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[10], DPRF:dprf|Register:reg11|dataOut[10], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[10], DPRF:dprf|Register:reg15|dataOut[10] ;
-; DataMemory:datamem|key_reg[11] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[11], DPRF:dprf|Register:reg3|dataOut[11],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[11], DPRF:dprf|Register:reg7|dataOut[11],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[11], DPRF:dprf|Register:reg11|dataOut[11], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[11], DPRF:dprf|Register:reg15|dataOut[11] ;
-; DataMemory:datamem|key_reg[12] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[12], DPRF:dprf|Register:reg3|dataOut[12],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[12], DPRF:dprf|Register:reg7|dataOut[12],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[12], DPRF:dprf|Register:reg11|dataOut[12], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[12], DPRF:dprf|Register:reg15|dataOut[12] ;
-; DataMemory:datamem|key_reg[13] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[13], DPRF:dprf|Register:reg3|dataOut[13],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[13], DPRF:dprf|Register:reg7|dataOut[13],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[13], DPRF:dprf|Register:reg11|dataOut[13], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[13], DPRF:dprf|Register:reg15|dataOut[13] ;
-; DataMemory:datamem|key_reg[14] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[14], DPRF:dprf|Register:reg3|dataOut[14],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[14], DPRF:dprf|Register:reg7|dataOut[14],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[14], DPRF:dprf|Register:reg11|dataOut[14], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[14], DPRF:dprf|Register:reg15|dataOut[14] ;
-; DataMemory:datamem|key_reg[15] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[15], DPRF:dprf|Register:reg3|dataOut[15],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[15], DPRF:dprf|Register:reg7|dataOut[15],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[15], DPRF:dprf|Register:reg11|dataOut[15], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[15], DPRF:dprf|Register:reg15|dataOut[15] ;
-; DataMemory:datamem|key_reg[16] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[16], DPRF:dprf|Register:reg3|dataOut[16],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[16], DPRF:dprf|Register:reg7|dataOut[16],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[16], DPRF:dprf|Register:reg11|dataOut[16], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[16], DPRF:dprf|Register:reg15|dataOut[16] ;
-; DataMemory:datamem|key_reg[17] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[17], DPRF:dprf|Register:reg3|dataOut[17],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[17], DPRF:dprf|Register:reg7|dataOut[17],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[17], DPRF:dprf|Register:reg11|dataOut[17], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[17], DPRF:dprf|Register:reg15|dataOut[17] ;
-; DataMemory:datamem|key_reg[18] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[18], DPRF:dprf|Register:reg3|dataOut[18],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[18], DPRF:dprf|Register:reg7|dataOut[18],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[18], DPRF:dprf|Register:reg11|dataOut[18], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[18], DPRF:dprf|Register:reg15|dataOut[18] ;
-; DataMemory:datamem|key_reg[19] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[19], DPRF:dprf|Register:reg3|dataOut[19],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[19], DPRF:dprf|Register:reg7|dataOut[19],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[19], DPRF:dprf|Register:reg11|dataOut[19], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[19], DPRF:dprf|Register:reg15|dataOut[19] ;
-; DataMemory:datamem|key_reg[20] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[20], DPRF:dprf|Register:reg3|dataOut[20],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[20], DPRF:dprf|Register:reg7|dataOut[20],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[20], DPRF:dprf|Register:reg11|dataOut[20], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[20], DPRF:dprf|Register:reg15|dataOut[20] ;
-; DataMemory:datamem|key_reg[21] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[21], DPRF:dprf|Register:reg3|dataOut[21],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[21], DPRF:dprf|Register:reg7|dataOut[21],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[21], DPRF:dprf|Register:reg11|dataOut[21], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[21], DPRF:dprf|Register:reg15|dataOut[21] ;
-; DataMemory:datamem|key_reg[22] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[22], DPRF:dprf|Register:reg3|dataOut[22],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[22], DPRF:dprf|Register:reg7|dataOut[22],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[22], DPRF:dprf|Register:reg11|dataOut[22], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[22], DPRF:dprf|Register:reg15|dataOut[22] ;
-; DataMemory:datamem|key_reg[23] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[23], DPRF:dprf|Register:reg3|dataOut[23],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[23], DPRF:dprf|Register:reg7|dataOut[23],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[23], DPRF:dprf|Register:reg11|dataOut[23], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[23], DPRF:dprf|Register:reg15|dataOut[23] ;
-; DataMemory:datamem|key_reg[24] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[24], DPRF:dprf|Register:reg3|dataOut[24],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[24], DPRF:dprf|Register:reg7|dataOut[24],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[24], DPRF:dprf|Register:reg11|dataOut[24], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[24], DPRF:dprf|Register:reg15|dataOut[24] ;
-; DataMemory:datamem|key_reg[25] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[25], DPRF:dprf|Register:reg3|dataOut[25],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[25], DPRF:dprf|Register:reg7|dataOut[25],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[25], DPRF:dprf|Register:reg11|dataOut[25], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[25], DPRF:dprf|Register:reg15|dataOut[25] ;
-; DataMemory:datamem|key_reg[26] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[26], DPRF:dprf|Register:reg3|dataOut[26],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[26], DPRF:dprf|Register:reg7|dataOut[26],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[26], DPRF:dprf|Register:reg11|dataOut[26], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[26], DPRF:dprf|Register:reg15|dataOut[26] ;
-; DataMemory:datamem|key_reg[27] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[27], DPRF:dprf|Register:reg3|dataOut[27],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[27], DPRF:dprf|Register:reg7|dataOut[27],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[27], DPRF:dprf|Register:reg11|dataOut[27], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[27], DPRF:dprf|Register:reg15|dataOut[27] ;
-; DataMemory:datamem|key_reg[28] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[28], DPRF:dprf|Register:reg3|dataOut[28],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[28], DPRF:dprf|Register:reg7|dataOut[28],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[28], DPRF:dprf|Register:reg11|dataOut[28], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[28], DPRF:dprf|Register:reg15|dataOut[28] ;
-; DataMemory:datamem|key_reg[29] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[29], DPRF:dprf|Register:reg3|dataOut[29],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[29], DPRF:dprf|Register:reg7|dataOut[29],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[29], DPRF:dprf|Register:reg11|dataOut[29], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[29], DPRF:dprf|Register:reg15|dataOut[29] ;
-; DataMemory:datamem|key_reg[30] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[30], DPRF:dprf|Register:reg3|dataOut[30],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[30], DPRF:dprf|Register:reg7|dataOut[30],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[30], DPRF:dprf|Register:reg11|dataOut[30], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[30], DPRF:dprf|Register:reg15|dataOut[30] ;
-; DataMemory:datamem|key_reg[31] ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[31], DPRF:dprf|Register:reg3|dataOut[31],  ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[31], DPRF:dprf|Register:reg7|dataOut[31],  ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[31], DPRF:dprf|Register:reg11|dataOut[31], ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[31], DPRF:dprf|Register:reg15|dataOut[31] ;
-; Controller:ctrl|rd[0]          ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[2], DPRF:dprf|Register:reg3|dataOut[2],    ;
-;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[2], DPRF:dprf|Register:reg7|dataOut[2],    ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[2], DPRF:dprf|Register:reg11|dataOut[2],   ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[2], DPRF:dprf|Register:reg15|dataOut[2]   ;
-+--------------------------------+---------------------------+----------------------------------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; DataMemory:datamem|key_reg[4..31]      ; Stuck at GND due to stuck port data_in ;
+; DataMemory:datamem|sw_reg[10..31]      ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 50 ;                                        ;
++----------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -732,12 +330,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 394   ;
-; Number of registers using Synchronous Clear  ; 2     ;
+; Total registers                              ; 592   ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 30    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 304   ;
+; Number of registers using Clock Enable       ; 562   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -748,7 +346,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Register Name                      ; Megafunction                  ; Type ;
 +------------------------------------+-------------------------------+------+
 ; DataMemory:datamem|addr_reg[0..10] ; DataMemory:datamem|data_rtl_0 ; RAM  ;
-; Controller:ctrl|alufunc[4]         ; Controller:ctrl|WideOr0_rtl_0 ; ROM  ;
 +------------------------------------+-------------------------------+------+
 
 
@@ -757,41 +354,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Project2|Register:pc|dataOut[1]               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg0|dataOut[9]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg2|dataOut[1]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg4|dataOut[7]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg6|dataOut[20]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg8|dataOut[20]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg10|dataOut[27] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg12|dataOut[16] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg14|dataOut[6]  ;
-; 8:1                ; 32 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |Project2|DPRF:dprf|Mux25                      ;
-; 4:1                ; 22 bits   ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; No         ; |Project2|regIn[27]                            ;
-; 16:1               ; 32 bits   ; 320 LEs       ; 192 LEs              ; 128 LEs                ; No         ; |Project2|DPRF:dprf|Mux40                      ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |Project2|regIn[5]                             ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Project2|regIn[0]                             ;
-; 64:1               ; 14 bits   ; 588 LEs       ; 112 LEs              ; 476 LEs                ; No         ; |Project2|ALU:alu|Mux18                        ;
-; 64:1               ; 16 bits   ; 672 LEs       ; 128 LEs              ; 544 LEs                ; No         ; |Project2|ALU:alu|Mux5                         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Project2|Register:pc|dataOut[0]               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg0|dataOut[2]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg1|dataOut[6]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg2|dataOut[0]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg3|dataOut[15]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg4|dataOut[12]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg5|dataOut[12]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg6|dataOut[12]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg7|dataOut[22]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg8|dataOut[22]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg9|dataOut[4]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg10|dataOut[5]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg11|dataOut[18] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg12|dataOut[24] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg13|dataOut[20] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg14|dataOut[20] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg15|dataOut[29] ;
+; 4:1                ; 22 bits   ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; No         ; |Project2|regIn[20]                            ;
+; 16:1               ; 32 bits   ; 320 LEs       ; 320 LEs              ; 0 LEs                  ; No         ; |Project2|DPRF:dprf|Mux40                      ;
+; 16:1               ; 32 bits   ; 320 LEs       ; 320 LEs              ; 0 LEs                  ; No         ; |Project2|DPRF:dprf|Mux6                       ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |Project2|regIn[7]                             ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Project2|regIn[1]                             ;
+; 17:1               ; 15 bits   ; 165 LEs       ; 90 LEs               ; 75 LEs                 ; No         ; |Project2|ALU:alu|out                          ;
+; 17:1               ; 16 bits   ; 176 LEs       ; 112 LEs              ; 64 LEs                 ; No         ; |Project2|ALU:alu|out                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------+
-; Source assignments for DataMemory:datamem|altsyncram:data_rtl_0|altsyncram_bq61:auto_generated ;
+; Source assignments for DataMemory:datamem|altsyncram:data_rtl_0|altsyncram_5b61:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------+
 ; Assignment                      ; Value              ; From ; To                               ;
 +---------------------------------+--------------------+------+----------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                ;
 +---------------------------------+--------------------+------+----------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------+
-; Source assignments for Controller:ctrl|altsyncram:WideOr0_rtl_0|altsyncram_mgv:auto_generated ;
-+---------------------------------+--------------------+------+---------------------------------+
-; Assignment                      ; Value              ; From ; To                              ;
-+---------------------------------+--------------------+------+---------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                               ;
-+---------------------------------+--------------------+------+---------------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -809,7 +405,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ADDR_HEX            ; 11110000000000000000000000000000 ; Unsigned Binary ;
 ; ADDR_LEDR           ; 11110000000000000000000000000100 ; Unsigned Binary ;
 ; ADDR_LEDG           ; 11110000000000000000000000001000 ; Unsigned Binary ;
-; IMEM_INIT_FILE      ; LightTest.mif                    ; String          ;
+; IMEM_INIT_FILE      ; Test2.mif                        ; String          ;
 ; IMEM_ADDR_BIT_WIDTH ; 11                               ; Signed Integer  ;
 ; IMEM_DATA_BIT_WIDTH ; 32                               ; Signed Integer  ;
 ; IMEM_PC_BITS_HI     ; 13                               ; Signed Integer  ;
@@ -1205,14 +801,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +-----------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: InstMemory:instMem ;
-+----------------+---------------+--------------------------------+
-; Parameter Name ; Value         ; Type                           ;
-+----------------+---------------+--------------------------------+
-; MEM_INIT_FILE  ; LightTest.mif ; String                         ;
-; ADDR_BIT_WIDTH ; 11            ; Signed Integer                 ;
-; DATA_BIT_WIDTH ; 32            ; Signed Integer                 ;
-; N_WORDS        ; 2048          ; Signed Integer                 ;
-+----------------+---------------+--------------------------------+
++----------------+-----------+------------------------------------+
+; Parameter Name ; Value     ; Type                               ;
++----------------+-----------+------------------------------------+
+; MEM_INIT_FILE  ; Test2.mif ; String                             ;
+; ADDR_BIT_WIDTH ; 11        ; Signed Integer                     ;
+; DATA_BIT_WIDTH ; 32        ; Signed Integer                     ;
+; N_WORDS        ; 2048      ; Signed Integer                     ;
++----------------+-----------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1427,45 +1023,44 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+----------------------------------+-----------------+
 ; TRUE           ; 00000000000000000000000000000001 ; Unsigned Binary ;
 ; FALSE          ; 00000000000000000000000000000000 ; Unsigned Binary ;
-; ADD            ; 000000                           ; Unsigned Binary ;
-; SUB            ; 000001                           ; Unsigned Binary ;
-; AND            ; 000100                           ; Unsigned Binary ;
-; OR             ; 000101                           ; Unsigned Binary ;
-; XOR            ; 000110                           ; Unsigned Binary ;
-; NAND           ; 001100                           ; Unsigned Binary ;
-; NOR            ; 001101                           ; Unsigned Binary ;
-; XNOR           ; 001110                           ; Unsigned Binary ;
-; MVHI           ; 001011                           ; Unsigned Binary ;
-; F              ; 010000                           ; Unsigned Binary ;
-; EQ             ; 010001                           ; Unsigned Binary ;
-; LT             ; 010010                           ; Unsigned Binary ;
-; LTE            ; 010011                           ; Unsigned Binary ;
-; EQZ            ; 010101                           ; Unsigned Binary ;
-; LTZ            ; 010110                           ; Unsigned Binary ;
-; LTEZ           ; 010111                           ; Unsigned Binary ;
-; T              ; 011000                           ; Unsigned Binary ;
-; NE             ; 011001                           ; Unsigned Binary ;
-; GTE            ; 011010                           ; Unsigned Binary ;
-; GT             ; 011011                           ; Unsigned Binary ;
-; NEZ            ; 011101                           ; Unsigned Binary ;
-; GTEZ           ; 011110                           ; Unsigned Binary ;
-; GTZ            ; 011111                           ; Unsigned Binary ;
-; JAL            ; 100000                           ; Unsigned Binary ;
+; ADD            ; 0000                             ; Unsigned Binary ;
+; SUB            ; 0001                             ; Unsigned Binary ;
+; AND            ; 0100                             ; Unsigned Binary ;
+; OR             ; 0101                             ; Unsigned Binary ;
+; XOR            ; 0110                             ; Unsigned Binary ;
+; NAND           ; 1100                             ; Unsigned Binary ;
+; NOR            ; 1101                             ; Unsigned Binary ;
+; XNOR           ; 1110                             ; Unsigned Binary ;
+; MVHI           ; 1011                             ; Unsigned Binary ;
+; F              ; 0000                             ; Unsigned Binary ;
+; EQ             ; 0001                             ; Unsigned Binary ;
+; LT             ; 0010                             ; Unsigned Binary ;
+; LTE            ; 0011                             ; Unsigned Binary ;
+; EQZ            ; 0101                             ; Unsigned Binary ;
+; LTZ            ; 0110                             ; Unsigned Binary ;
+; LTEZ           ; 0111                             ; Unsigned Binary ;
+; T              ; 1000                             ; Unsigned Binary ;
+; NE             ; 1001                             ; Unsigned Binary ;
+; GTE            ; 1010                             ; Unsigned Binary ;
+; GT             ; 1011                             ; Unsigned Binary ;
+; NEZ            ; 1101                             ; Unsigned Binary ;
+; GTEZ           ; 1110                             ; Unsigned Binary ;
+; GTZ            ; 1111                             ; Unsigned Binary ;
 +----------------+----------------------------------+-----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: DataMemory:datamem ;
-+---------------------+---------------+---------------------------+
-; Parameter Name      ; Value         ; Type                      ;
-+---------------------+---------------+---------------------------+
-; MEM_INIT_FILE       ; LightTest.mif ; String                    ;
-; ADDR_BIT_WIDTH      ; 32            ; Signed Integer            ;
-; DATA_BIT_WIDTH      ; 32            ; Signed Integer            ;
-; TRUE_ADDR_BIT_WIDTH ; 11            ; Signed Integer            ;
-; N_WORDS             ; 2048          ; Signed Integer            ;
-+---------------------+---------------+---------------------------+
++---------------------+-----------+-------------------------------+
+; Parameter Name      ; Value     ; Type                          ;
++---------------------+-----------+-------------------------------+
+; MEM_INIT_FILE       ; Test2.mif ; String                        ;
+; ADDR_BIT_WIDTH      ; 32        ; Signed Integer                ;
+; DATA_BIT_WIDTH      ; 32        ; Signed Integer                ;
+; TRUE_ADDR_BIT_WIDTH ; 11        ; Signed Integer                ;
+; N_WORDS             ; 2048      ; Signed Integer                ;
++---------------------+-----------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1512,7 +1107,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                       ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                       ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                       ;
-; INIT_FILE                          ; LightTest.mif        ; Untyped                       ;
+; INIT_FILE                          ; Test2.mif            ; Untyped                       ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                       ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Untyped                       ;
 ; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                       ;
@@ -1525,69 +1120,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                       ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                       ;
 ; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                       ;
-; CBXI_PARAMETER                     ; altsyncram_bq61      ; Untyped                       ;
+; CBXI_PARAMETER                     ; altsyncram_5b61      ; Untyped                       ;
 +------------------------------------+----------------------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Controller:ctrl|altsyncram:WideOr0_rtl_0 ;
-+------------------------------------+----------------------------+-------------------------+
-; Parameter Name                     ; Value                      ; Type                    ;
-+------------------------------------+----------------------------+-------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                          ; Untyped                 ;
-; AUTO_CARRY_CHAINS                  ; ON                         ; AUTO_CARRY              ;
-; IGNORE_CARRY_BUFFERS               ; OFF                        ; IGNORE_CARRY            ;
-; AUTO_CASCADE_CHAINS                ; ON                         ; AUTO_CASCADE            ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                        ; IGNORE_CASCADE          ;
-; WIDTH_BYTEENA                      ; 1                          ; Untyped                 ;
-; OPERATION_MODE                     ; ROM                        ; Untyped                 ;
-; WIDTH_A                            ; 1                          ; Untyped                 ;
-; WIDTHAD_A                          ; 4                          ; Untyped                 ;
-; NUMWORDS_A                         ; 16                         ; Untyped                 ;
-; OUTDATA_REG_A                      ; UNREGISTERED               ; Untyped                 ;
-; ADDRESS_ACLR_A                     ; NONE                       ; Untyped                 ;
-; OUTDATA_ACLR_A                     ; NONE                       ; Untyped                 ;
-; WRCONTROL_ACLR_A                   ; NONE                       ; Untyped                 ;
-; INDATA_ACLR_A                      ; NONE                       ; Untyped                 ;
-; BYTEENA_ACLR_A                     ; NONE                       ; Untyped                 ;
-; WIDTH_B                            ; 1                          ; Untyped                 ;
-; WIDTHAD_B                          ; 1                          ; Untyped                 ;
-; NUMWORDS_B                         ; 1                          ; Untyped                 ;
-; INDATA_REG_B                       ; CLOCK1                     ; Untyped                 ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                     ; Untyped                 ;
-; RDCONTROL_REG_B                    ; CLOCK1                     ; Untyped                 ;
-; ADDRESS_REG_B                      ; CLOCK1                     ; Untyped                 ;
-; OUTDATA_REG_B                      ; UNREGISTERED               ; Untyped                 ;
-; BYTEENA_REG_B                      ; CLOCK1                     ; Untyped                 ;
-; INDATA_ACLR_B                      ; NONE                       ; Untyped                 ;
-; WRCONTROL_ACLR_B                   ; NONE                       ; Untyped                 ;
-; ADDRESS_ACLR_B                     ; NONE                       ; Untyped                 ;
-; OUTDATA_ACLR_B                     ; NONE                       ; Untyped                 ;
-; RDCONTROL_ACLR_B                   ; NONE                       ; Untyped                 ;
-; BYTEENA_ACLR_B                     ; NONE                       ; Untyped                 ;
-; WIDTH_BYTEENA_A                    ; 1                          ; Untyped                 ;
-; WIDTH_BYTEENA_B                    ; 1                          ; Untyped                 ;
-; RAM_BLOCK_TYPE                     ; AUTO                       ; Untyped                 ;
-; BYTE_SIZE                          ; 8                          ; Untyped                 ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                  ; Untyped                 ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ       ; Untyped                 ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ       ; Untyped                 ;
-; INIT_FILE                          ; Project2.Project20.rtl.mif ; Untyped                 ;
-; INIT_FILE_LAYOUT                   ; PORT_A                     ; Untyped                 ;
-; MAXIMUM_DEPTH                      ; 0                          ; Untyped                 ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL                     ; Untyped                 ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                     ; Untyped                 ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                     ; Untyped                 ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                     ; Untyped                 ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN            ; Untyped                 ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN            ; Untyped                 ;
-; ENABLE_ECC                         ; FALSE                      ; Untyped                 ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                      ; Untyped                 ;
-; WIDTH_ECCSTATUS                    ; 3                          ; Untyped                 ;
-; DEVICE_FAMILY                      ; Cyclone II                 ; Untyped                 ;
-; CBXI_PARAMETER                     ; altsyncram_mgv             ; Untyped                 ;
-+------------------------------------+----------------------------+-------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1613,22 +1147,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+------------------------------------------+
 ; Name                                      ; Value                                    ;
 +-------------------------------------------+------------------------------------------+
-; Number of entity instances                ; 2                                        ;
+; Number of entity instances                ; 1                                        ;
 ; Entity Instance                           ; DataMemory:datamem|altsyncram:data_rtl_0 ;
 ;     -- OPERATION_MODE                     ; SINGLE_PORT                              ;
 ;     -- WIDTH_A                            ; 32                                       ;
 ;     -- NUMWORDS_A                         ; 2048                                     ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                             ;
-;     -- WIDTH_B                            ; 1                                        ;
-;     -- NUMWORDS_B                         ; 1                                        ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                   ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                             ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                     ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                ;
-; Entity Instance                           ; Controller:ctrl|altsyncram:WideOr0_rtl_0 ;
-;     -- OPERATION_MODE                     ; ROM                                      ;
-;     -- WIDTH_A                            ; 1                                        ;
-;     -- NUMWORDS_A                         ; 16                                       ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                             ;
 ;     -- WIDTH_B                            ; 1                                        ;
 ;     -- NUMWORDS_B                         ; 1                                        ;
@@ -1653,7 +1176,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:15     ;
 +----------------+--------------+
 
 
@@ -1663,7 +1186,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Oct 25 22:08:57 2015
+    Info: Processing started: Sun Oct 25 23:00:37 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project2 -c Project2
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file signextension.v
@@ -1758,16 +1281,28 @@ Info (12128): Elaborating entity "InstMemory" for hierarchy "InstMemory:instMem"
 Warning (10858): Verilog HDL warning at instmemory.v(11): object data used but never assigned
 Info (12128): Elaborating entity "SevenSeg" for hierarchy "SevenSeg:hex0"
 Info (12128): Elaborating entity "Controller" for hierarchy "Controller:ctrl"
+Warning (10235): Verilog HDL Always Construct warning at Controller.v(24): variable "ra" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Controller.v(25): variable "rb" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Controller.v(26): variable "rc" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Controller.v(27): variable "imm" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Controller.v(28): variable "func" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Controller.v(38): variable "op" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Controller.v(45): variable "ra" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Controller.v(46): variable "rb" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Controller.v(61): variable "ra" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Controller.v(62): variable "rb" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10270): Verilog HDL Case Statement warning at Controller.v(38): incomplete case statement has no default case item
 Info (12128): Elaborating entity "SignExtension" for hierarchy "Controller:ctrl|SignExtension:imm_sinex"
 Info (12128): Elaborating entity "DPRF" for hierarchy "DPRF:dprf"
 Info (12128): Elaborating entity "Register" for hierarchy "DPRF:dprf|Register:reg0"
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu"
-Warning (10270): Verilog HDL Case Statement warning at ALU.v(13): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at ALU.v(14): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at ALU.v(47): incomplete case statement has no default case item
 Info (12128): Elaborating entity "DataMemory" for hierarchy "DataMemory:datamem"
 Warning (10230): Verilog HDL assignment warning at DataMemory.v(39): truncated value with size 12 to match size of target (11)
-Info (286030): Timing-Driven Synthesis is running
 Warning (276021): Created node "DataMemory:datamem|data" as a single-port RAM by generating altsyncram megafunction to implement register logic. Power-up values at the outputs of the RAM are different from the original design.
-Info (19000): Inferred 2 megafunctions from design logic
+Info (286030): Timing-Driven Synthesis is running
+Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "DataMemory:datamem|data_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to SINGLE_PORT
         Info (286033): Parameter WIDTH_A set to 32
@@ -1778,15 +1313,7 @@ Info (19000): Inferred 2 megafunctions from design logic
         Info (286033): Parameter OUTDATA_ACLR_A set to NONE
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-        Info (286033): Parameter INIT_FILE set to LightTest.mif
-    Info (276031): Inferred altsyncram megafunction from the following design logic: "Controller:ctrl|WideOr0_rtl_0"
-        Info (286033): Parameter OPERATION_MODE set to ROM
-        Info (286033): Parameter WIDTH_A set to 1
-        Info (286033): Parameter WIDTHAD_A set to 4
-        Info (286033): Parameter NUMWORDS_A set to 16
-        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
-        Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
-        Info (286033): Parameter INIT_FILE set to Project2.Project20.rtl.mif
+        Info (286033): Parameter INIT_FILE set to Test2.mif
 Info (12130): Elaborated megafunction instantiation "DataMemory:datamem|altsyncram:data_rtl_0"
 Info (12133): Instantiated megafunction "DataMemory:datamem|altsyncram:data_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "SINGLE_PORT"
@@ -1798,34 +1325,23 @@ Info (12133): Instantiated megafunction "DataMemory:datamem|altsyncram:data_rtl_
     Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-    Info (12134): Parameter "INIT_FILE" = "LightTest.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_bq61.tdf
-    Info (12023): Found entity 1: altsyncram_bq61
-Info (12130): Elaborated megafunction instantiation "Controller:ctrl|altsyncram:WideOr0_rtl_0"
-Info (12133): Instantiated megafunction "Controller:ctrl|altsyncram:WideOr0_rtl_0" with the following parameter:
-    Info (12134): Parameter "OPERATION_MODE" = "ROM"
-    Info (12134): Parameter "WIDTH_A" = "1"
-    Info (12134): Parameter "WIDTHAD_A" = "4"
-    Info (12134): Parameter "NUMWORDS_A" = "16"
-    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
-    Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
-    Info (12134): Parameter "INIT_FILE" = "Project2.Project20.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mgv.tdf
-    Info (12023): Found entity 1: altsyncram_mgv
+    Info (12134): Parameter "INIT_FILE" = "Test2.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_5b61.tdf
+    Info (12023): Found entity 1: altsyncram_5b61
 Info (144001): Generated suppressed messages file C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1436 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2379 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 46 output pins
-    Info (21061): Implemented 1341 logic cells
-    Info (21064): Implemented 33 RAM segments
+    Info (21061): Implemented 2285 logic cells
+    Info (21064): Implemented 32 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 20 warnings
     Info: Peak virtual memory: 512 megabytes
-    Info: Processing ended: Sun Oct 25 22:09:05 2015
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Processing ended: Sun Oct 25 23:00:55 2015
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:18
 
 
 +------------------------------------------+

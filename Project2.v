@@ -17,7 +17,7 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	parameter ADDR_LEDR 					 = 32'hF0000004;
 	parameter ADDR_LEDG 					 = 32'hF0000008;
 	  
-	parameter IMEM_INIT_FILE				 = "LightTest.mif";
+	parameter IMEM_INIT_FILE				 = "Test2.mif";
 	parameter IMEM_ADDR_BIT_WIDTH 		 = 11;
 	parameter IMEM_DATA_BIT_WIDTH 		 = INST_BIT_WIDTH;
 	parameter IMEM_PC_BITS_HI     		 = IMEM_ADDR_BIT_WIDTH + 2;
@@ -51,24 +51,25 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	wire[31:0] pcNext, imm, aluSrc, aluOut, memIn, memOut, regOut1, regOut2, regIn;
 	wire[3:0] r1, r2, rd;
 	wire[5:0] alufunc;
-	wire isBranch,toReg,toMem,useImm,fromMem;
+	wire isBranch,isJal,isCMP,toReg,toMem,useImm,fromMem;
 	
-	assign regIn = alufunc[5] ? pcNext : (fromMem ? memOut : aluOut);
+	assign pcNext = pcOut + 4;
+	assign regIn = isJal ? pcNext : (fromMem ? memOut : aluOut);
 	assign aluSrc = useImm ? imm : regOut2;
-	assign pcIn = (alufunc[5] ? regOut1 : pcNext) + (((isBranch && aluOut) || alufunc[5]) ? (imm * 4) : 0);
+	assign pcIn = (isJal ? regOut1 : pcNext) + (((isBranch && aluOut) || isJal) ? (imm * 4) : 0);
 	
 	SevenSeg hex0(hex[3:0], HEX0);
 	SevenSeg hex1(hex[7:4], HEX1);
 	SevenSeg hex2(hex[11:8], HEX2);
 	SevenSeg hex3(hex[15:12], HEX3);
 	
-	Controller ctrl(clk, pcOut,instWord,r1,r2,rd,imm,alufunc,pcNext,isBranch,toReg,toMem,useImm,fromMem);
+	Controller ctrl(clk,instWord,r1,r2,rd,imm,alufunc,isBranch,isJal,isCMP,toReg,toMem,useImm,fromMem);
 	  
 	// Create the registers
 	DPRF dprf(clk, reset, toReg, rd, r1, r2, regIn, regOut1, regOut2);
 	  
 	// Create ALU unit
-	ALU alu(alufunc, regOut1, aluSrc, aluOut);
+	ALU alu(alufunc, regOut1, aluSrc,isCMP,isJal, aluOut);
 	  
 	// Put the code for data memory and I/O here
 	// KEYS, SWITCHES, HEXS, and LEDS are memeory mapped IO
