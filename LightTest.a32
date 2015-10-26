@@ -10,7 +10,6 @@ Face:
     andi	s0,s0,0
     addi	t0,s0,1
     sw		t0,OFSLEDG(gp)
-	bt		t0, t0, Face
 ; Display 0xFACE on HEX
     andi	s0,s0,0
     addi	t0,s0,0xFACE

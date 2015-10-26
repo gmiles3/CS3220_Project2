@@ -17,7 +17,7 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	parameter ADDR_LEDR 					 = 32'hF0000004;
 	parameter ADDR_LEDG 					 = 32'hF0000008;
 	  
-	parameter IMEM_INIT_FILE				 = "FooBar.mif";
+	parameter IMEM_INIT_FILE				 = "LightTest.mif";
 	parameter IMEM_ADDR_BIT_WIDTH 		 = 11;
 	parameter IMEM_DATA_BIT_WIDTH 		 = INST_BIT_WIDTH;
 	parameter IMEM_PC_BITS_HI     		 = IMEM_ADDR_BIT_WIDTH + 2;
@@ -48,31 +48,30 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	wire[7:0] ledg;
 	wire[9:0] sw, ledr;
 	wire[15:0] hex;
-	wire[31:0] selRegRead1, selRegRead2, selRegWrite, pcNext, imm, regWriteData, regReadData1, regReadData2, aluSource, aluResult, memReadData;
-	wire[5:0] selALUop;
-	wire enBranch, enRegWrite, enMemWrite, aluSrcIsReg, memToReg;
+	wire[31:0] pcNext, imm, aluSrc, aluOut, memIn, memOut, regOut1, regOut2, regIn;
+	wire[3:0] r1, r2, rd;
+	wire[5:0] alufunc;
+	wire isBranch,toReg,toMem,useImm,fromMem;
 	
-	assign regWriteData = memToReg ? memReadData : aluResult;
-	assign aluSource = aluSrcIsReg ? regReadData2 : imm;
-	assign pcIn = (selALUop[5] ? regReadData1 : pcNext) + (((enBranch && aluResult) || selALUop[5]) ? (imm * 4) : 0);
+	assign regIn = alufunc[5] ? pcNext : (fromMem ? memOut : aluOut);
+	assign aluSrc = useImm ? imm : regOut2;
+	assign pcIn = (alufunc[5] ? regOut1 : pcNext) + (((isBranch && aluOut) || alufunc[5]) ? (imm * 4) : 0);
 	
 	SevenSeg hex0(hex[3:0], HEX0);
 	SevenSeg hex1(hex[7:4], HEX1);
 	SevenSeg hex2(hex[11:8], HEX2);
 	SevenSeg hex3(hex[15:12], HEX3);
 	
-	Controller controller(clk, pcOut, instWord, 
-		selRegRead1, selRegRead2, selRegWrite, imm, selALUop, pcNext, 
-		enBranch, enRegWrite, enMemWrite, aluSrcIsReg, memToReg);
+	Controller ctrl(clk, pcOut,instWord,r1,r2,rd,imm,alufunc,pcNext,isBranch,toReg,toMem,useImm,fromMem);
 	  
 	// Create the registers
-	DPRF dprf(clk, reset, enRegWrite, selRegWrite, selRegRead1, selRegRead2, regWriteData, regReadData1, regReadData2);
+	DPRF dprf(clk, reset, toReg, rd, r1, r2, regIn, regOut1, regOut2);
 	  
 	// Create ALU unit
-	ALU alu(clk, selALUop, regReadData1, aluSource, aluResult);
+	ALU alu(clk, alufunc, regOut1, aluSrc, aluOut);
 	  
 	// Put the code for data memory and I/O here
 	// KEYS, SWITCHES, HEXS, and LEDS are memeory mapped IO
-	DataMemory #(IMEM_INIT_FILE) datamem(clk, enMemWrite, aluResult, regReadData2, SW, KEY, LEDR, LEDG, hex, memReadData);
+	DataMemory #(IMEM_INIT_FILE) datamem(clk, toMem, aluOut, regOut2, SW, KEY, LEDR, LEDG, hex, memOut);
 endmodule
 
