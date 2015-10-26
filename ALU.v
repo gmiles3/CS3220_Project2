@@ -1,5 +1,4 @@
-module ALU(clk, opsel, A, B, out);
-	input clk;
+module ALU(opsel, A, B, out);
 	input[5:0] opsel;
 	input signed[31:0] A, B;
 	output reg[31:0] out;
@@ -9,7 +8,8 @@ module ALU(clk, opsel, A, B, out);
 	parameter F=6'h10, EQ=6'h11, LT=6'h12, LTE=6'h13, EQZ=6'h15, LTZ=6'h16, LTEZ=6'h17, T=6'h18, NE=6'h19, GTE=6'h1A, GT=6'h1B, NEZ=6'h1D, GTEZ=6'h1E, GTZ=6'h1F;
 	parameter JAL=6'h20;
 	
-	always @(posedge clk) begin
+	always @(*) begin
+		out <= 0;
 		case(opsel)
 			ADD: 
 				out <= A + B;

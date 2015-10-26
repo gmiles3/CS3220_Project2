@@ -68,7 +68,7 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 	DPRF dprf(clk, reset, toReg, rd, r1, r2, regIn, regOut1, regOut2);
 	  
 	// Create ALU unit
-	ALU alu(clk, alufunc, regOut1, aluSrc, aluOut);
+	ALU alu(alufunc, regOut1, aluSrc, aluOut);
 	  
 	// Put the code for data memory and I/O here
 	// KEYS, SWITCHES, HEXS, and LEDS are memeory mapped IO

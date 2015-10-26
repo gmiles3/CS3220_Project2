@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project2
-Sun Oct 25 21:35:47 2015
+Sun Oct 25 22:09:05 2015
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -79,15 +79,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 25 21:35:47 2015           ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 25 22:09:05 2015           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Project2                                        ;
 ; Top-level Entity Name              ; Project2                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 1,309                                           ;
-;     Total combinational functions  ; 1,055                                           ;
-;     Dedicated logic registers      ; 426                                             ;
-; Total registers                    ; 426                                             ;
+; Total logic elements               ; 1,289                                           ;
+;     Total combinational functions  ; 1,035                                           ;
+;     Dedicated logic registers      ; 394                                             ;
+; Total registers                    ; 394                                             ;
 ; Total pins                         ; 61                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 65,552                                          ;
@@ -232,20 +232,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------------------------------------------+
 ; Resource                                    ; Usage                                      ;
 +---------------------------------------------+--------------------------------------------+
-; Estimated Total logic elements              ; 1,309                                      ;
+; Estimated Total logic elements              ; 1,289                                      ;
 ;                                             ;                                            ;
-; Total combinational functions               ; 1055                                       ;
+; Total combinational functions               ; 1035                                       ;
 ; Logic element usage by number of LUT inputs ;                                            ;
-;     -- 4 input functions                    ; 633                                        ;
-;     -- 3 input functions                    ; 307                                        ;
-;     -- <=2 input functions                  ; 115                                        ;
+;     -- 4 input functions                    ; 663                                        ;
+;     -- 3 input functions                    ; 271                                        ;
+;     -- <=2 input functions                  ; 101                                        ;
 ;                                             ;                                            ;
 ; Logic elements by mode                      ;                                            ;
-;     -- normal mode                          ; 845                                        ;
+;     -- normal mode                          ; 825                                        ;
 ;     -- arithmetic mode                      ; 210                                        ;
 ;                                             ;                                            ;
-; Total registers                             ; 426                                        ;
-;     -- Dedicated logic registers            ; 426                                        ;
+; Total registers                             ; 394                                        ;
+;     -- Dedicated logic registers            ; 394                                        ;
 ;     -- I/O registers                        ; 0                                          ;
 ;                                             ;                                            ;
 ; I/O pins                                    ; 61                                         ;
@@ -255,9 +255,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- PLLs                                 ; 1                                          ;
 ;                                             ;                                            ;
 ; Maximum fan-out node                        ; PLL:PLL_inst|altpll:altpll_component|_clk0 ;
-; Maximum fan-out                             ; 499                                        ;
-; Total fan-out                               ; 5394                                       ;
-; Average fan-out                             ; 3.42                                       ;
+; Maximum fan-out                             ; 467                                        ;
+; Total fan-out                               ; 5280                                       ;
+; Average fan-out                             ; 3.46                                       ;
 +---------------------------------------------+--------------------------------------------+
 
 
@@ -266,18 +266,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                               ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+--------------+
-; |Project2                                 ; 1055 (124)        ; 426 (0)      ; 65552       ; 0            ; 0       ; 0         ; 61   ; 0            ; |Project2                                                                         ; work         ;
-;    |ALU:alu|                              ; 466 (466)         ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|ALU:alu                                                                 ; work         ;
+; |Project2                                 ; 1035 (110)        ; 394 (0)      ; 65552       ; 0            ; 0       ; 0         ; 61   ; 0            ; |Project2                                                                         ; work         ;
+;    |ALU:alu|                              ; 455 (455)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|ALU:alu                                                                 ; work         ;
 ;    |Controller:ctrl|                      ; 43 (43)           ; 58 (58)      ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|Controller:ctrl                                                         ; work         ;
 ;       |altsyncram:WideOr0_rtl_0|          ; 0 (0)             ; 0 (0)        ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|Controller:ctrl|altsyncram:WideOr0_rtl_0                                ; work         ;
 ;          |altsyncram_mgv:auto_generated|  ; 0 (0)             ; 0 (0)        ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|Controller:ctrl|altsyncram:WideOr0_rtl_0|altsyncram_mgv:auto_generated  ; work         ;
-;    |DPRF:dprf|                            ; 320 (256)         ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf                                                               ; work         ;
-;       |Register:reg0|                     ; 55 (55)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg0                                                 ; work         ;
+;    |DPRF:dprf|                            ; 325 (256)         ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf                                                               ; work         ;
+;       |Register:reg0|                     ; 61 (61)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg0                                                 ; work         ;
 ;       |Register:reg10|                    ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg10                                                ; work         ;
 ;       |Register:reg12|                    ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg12                                                ; work         ;
 ;       |Register:reg14|                    ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg14                                                ; work         ;
 ;       |Register:reg2|                     ; 2 (2)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg2                                                 ; work         ;
-;       |Register:reg4|                     ; 2 (2)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg4                                                 ; work         ;
+;       |Register:reg4|                     ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg4                                                 ; work         ;
 ;       |Register:reg6|                     ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg6                                                 ; work         ;
 ;       |Register:reg8|                     ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DPRF:dprf|Register:reg8                                                 ; work         ;
 ;    |DataMemory:datamem|                   ; 10 (10)           ; 48 (48)      ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project2|DataMemory:datamem                                                      ; work         ;
@@ -322,8 +322,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DataMemory:datamem|key_reg[4..31]       ; Stuck at GND due to stuck port data_in  ;
 ; DataMemory:datamem|sw_reg[10..31]       ; Stuck at GND due to stuck port data_in  ;
 ; Controller:ctrl|immSign[16..31]         ; Merged with Controller:ctrl|immSign[15] ;
-; Controller:ctrl|rd[0]                   ; Stuck at GND due to stuck port data_in  ;
 ; Controller:ctrl|r1[0]                   ; Stuck at GND due to stuck port data_in  ;
+; Controller:ctrl|rd[0]                   ; Stuck at GND due to stuck port data_in  ;
 ; DPRF:dprf|Register:reg1|dataOut[0]      ; Stuck at GND due to stuck port data_in  ;
 ; DPRF:dprf|Register:reg3|dataOut[0]      ; Stuck at GND due to stuck port data_in  ;
 ; DPRF:dprf|Register:reg5|dataOut[0]      ; Stuck at GND due to stuck port data_in  ;
@@ -332,126 +332,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DPRF:dprf|Register:reg11|dataOut[0]     ; Stuck at GND due to stuck port data_in  ;
 ; DPRF:dprf|Register:reg13|dataOut[0]     ; Stuck at GND due to stuck port data_in  ;
 ; DPRF:dprf|Register:reg15|dataOut[0]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[1]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[1]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[1]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[1]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[1]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[1]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[1]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[1]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[2]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[2]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[2]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[2]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[2]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[2]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[2]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[2]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[3]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[3]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[3]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[3]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[3]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[3]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[3]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[3]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[4]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[4]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[4]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[4]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[4]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[4]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[4]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[4]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[5]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[5]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[5]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[5]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[5]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[5]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[5]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[5]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[6]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[6]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[6]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[6]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[6]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[6]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[6]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[6]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[7]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[7]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[7]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[7]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[7]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[7]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[7]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[7]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[8]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[8]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[8]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[8]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[8]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[8]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[8]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[8]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[9]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[9]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[9]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[9]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[9]      ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[9]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[9]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[9]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[11]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[11]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[11]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[11]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[11]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[11]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[11]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[11]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[10]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[10]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[10]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[10]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[10]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[10]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[10]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[10]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[15]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[15]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[15]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[15]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[15]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[15]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[15]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[15]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[14]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[14]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[14]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[14]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[14]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[14]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[14]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[14]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[13]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[13]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[13]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[13]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[13]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[13]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[13]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[13]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg1|dataOut[12]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg3|dataOut[12]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg5|dataOut[12]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg7|dataOut[12]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg9|dataOut[12]     ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg11|dataOut[12]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg13|dataOut[12]    ; Stuck at GND due to stuck port data_in  ;
-; DPRF:dprf|Register:reg15|dataOut[12]    ; Stuck at GND due to stuck port data_in  ;
 ; DPRF:dprf|Register:reg1|dataOut[31]     ; Stuck at GND due to stuck port data_in  ;
 ; DPRF:dprf|Register:reg3|dataOut[31]     ; Stuck at GND due to stuck port data_in  ;
 ; DPRF:dprf|Register:reg5|dataOut[31]     ; Stuck at GND due to stuck port data_in  ;
@@ -580,13 +460,133 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DPRF:dprf|Register:reg11|dataOut[16]    ; Stuck at GND due to stuck port data_in  ;
 ; DPRF:dprf|Register:reg13|dataOut[16]    ; Stuck at GND due to stuck port data_in  ;
 ; DPRF:dprf|Register:reg15|dataOut[16]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg1|dataOut[15]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg3|dataOut[15]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg5|dataOut[15]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg7|dataOut[15]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg9|dataOut[15]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg11|dataOut[15]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg13|dataOut[15]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg15|dataOut[15]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg1|dataOut[14]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg3|dataOut[14]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg5|dataOut[14]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg7|dataOut[14]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg9|dataOut[14]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg11|dataOut[14]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg13|dataOut[14]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg15|dataOut[14]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg1|dataOut[13]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg3|dataOut[13]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg5|dataOut[13]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg7|dataOut[13]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg9|dataOut[13]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg11|dataOut[13]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg13|dataOut[13]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg15|dataOut[13]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg1|dataOut[12]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg3|dataOut[12]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg5|dataOut[12]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg7|dataOut[12]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg9|dataOut[12]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg11|dataOut[12]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg13|dataOut[12]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg15|dataOut[12]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg1|dataOut[11]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg3|dataOut[11]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg5|dataOut[11]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg7|dataOut[11]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg9|dataOut[11]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg11|dataOut[11]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg13|dataOut[11]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg15|dataOut[11]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg1|dataOut[10]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg3|dataOut[10]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg5|dataOut[10]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg7|dataOut[10]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg9|dataOut[10]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg11|dataOut[10]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg13|dataOut[10]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg15|dataOut[10]    ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg1|dataOut[9]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg3|dataOut[9]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg5|dataOut[9]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg7|dataOut[9]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg9|dataOut[9]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg11|dataOut[9]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg13|dataOut[9]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg15|dataOut[9]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg1|dataOut[8]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg3|dataOut[8]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg5|dataOut[8]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg7|dataOut[8]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg9|dataOut[8]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg11|dataOut[8]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg13|dataOut[8]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg15|dataOut[8]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg1|dataOut[7]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg3|dataOut[7]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg5|dataOut[7]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg7|dataOut[7]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg9|dataOut[7]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg11|dataOut[7]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg13|dataOut[7]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg15|dataOut[7]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg1|dataOut[6]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg3|dataOut[6]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg5|dataOut[6]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg7|dataOut[6]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg9|dataOut[6]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg11|dataOut[6]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg13|dataOut[6]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg15|dataOut[6]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg1|dataOut[5]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg3|dataOut[5]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg5|dataOut[5]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg7|dataOut[5]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg9|dataOut[5]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg11|dataOut[5]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg13|dataOut[5]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg15|dataOut[5]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg1|dataOut[4]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg3|dataOut[4]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg5|dataOut[4]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg7|dataOut[4]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg9|dataOut[4]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg11|dataOut[4]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg13|dataOut[4]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg15|dataOut[4]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg1|dataOut[3]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg3|dataOut[3]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg5|dataOut[3]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg7|dataOut[3]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg9|dataOut[3]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg11|dataOut[3]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg13|dataOut[3]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg15|dataOut[3]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg1|dataOut[2]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg3|dataOut[2]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg5|dataOut[2]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg7|dataOut[2]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg9|dataOut[2]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg11|dataOut[2]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg13|dataOut[2]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg15|dataOut[2]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg1|dataOut[1]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg3|dataOut[1]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg5|dataOut[1]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg7|dataOut[1]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg9|dataOut[1]      ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg11|dataOut[1]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg13|dataOut[1]     ; Stuck at GND due to stuck port data_in  ;
+; DPRF:dprf|Register:reg15|dataOut[1]     ; Stuck at GND due to stuck port data_in  ;
 ; Controller:ctrl|r2[0]                   ; Merged with Controller:ctrl|r2[3]       ;
-; Controller:ctrl|rd[1]                   ; Merged with Controller:ctrl|alufunc[2]  ;
 ; Controller:ctrl|immSign[12..14]         ; Merged with Controller:ctrl|immSign[15] ;
 ; Controller:ctrl|immSign[9]              ; Merged with Controller:ctrl|immSign[11] ;
 ; Controller:ctrl|immSign[5,8]            ; Merged with Controller:ctrl|immSign[10] ;
 ; Controller:ctrl|immSign[6]              ; Merged with Controller:ctrl|immSign[7]  ;
 ; Controller:ctrl|immSign[1]              ; Merged with Controller:ctrl|immSign[2]  ;
+; Controller:ctrl|rd[1]                   ; Merged with Controller:ctrl|alufunc[2]  ;
 ; Total Number of Removed Registers = 334 ;                                         ;
 +-----------------------------------------+-----------------------------------------+
 
@@ -596,22 +596,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------+---------------------------+----------------------------------------------------------------------------+
 ; Register name                  ; Reason for Removal        ; Registers Removed due to This Register                                     ;
 +--------------------------------+---------------------------+----------------------------------------------------------------------------+
-; Controller:ctrl|rd[0]          ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[0], DPRF:dprf|Register:reg3|dataOut[0],    ;
+; Controller:ctrl|r1[0]          ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[0], DPRF:dprf|Register:reg3|dataOut[0],    ;
 ;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[0], DPRF:dprf|Register:reg7|dataOut[0],    ;
 ;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[0], DPRF:dprf|Register:reg11|dataOut[0],   ;
 ;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[0], DPRF:dprf|Register:reg15|dataOut[0],  ;
-;                                ;                           ; DPRF:dprf|Register:reg1|dataOut[1], DPRF:dprf|Register:reg3|dataOut[1],    ;
-;                                ;                           ; DPRF:dprf|Register:reg5|dataOut[1], DPRF:dprf|Register:reg7|dataOut[1],    ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[1], DPRF:dprf|Register:reg11|dataOut[1],   ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[1], DPRF:dprf|Register:reg15|dataOut[1],  ;
-;                                ;                           ; DPRF:dprf|Register:reg1|dataOut[2], DPRF:dprf|Register:reg3|dataOut[2],    ;
-;                                ;                           ; DPRF:dprf|Register:reg5|dataOut[2], DPRF:dprf|Register:reg7|dataOut[2],    ;
-;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[2], DPRF:dprf|Register:reg11|dataOut[2],   ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[2], DPRF:dprf|Register:reg15|dataOut[2],  ;
 ;                                ;                           ; DPRF:dprf|Register:reg1|dataOut[3], DPRF:dprf|Register:reg3|dataOut[3],    ;
 ;                                ;                           ; DPRF:dprf|Register:reg5|dataOut[3], DPRF:dprf|Register:reg7|dataOut[3],    ;
 ;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[3], DPRF:dprf|Register:reg11|dataOut[3],   ;
-;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[3], DPRF:dprf|Register:reg15|dataOut[3]   ;
+;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[3], DPRF:dprf|Register:reg15|dataOut[3],  ;
+;                                ;                           ; DPRF:dprf|Register:reg1|dataOut[1], DPRF:dprf|Register:reg3|dataOut[1],    ;
+;                                ;                           ; DPRF:dprf|Register:reg5|dataOut[1], DPRF:dprf|Register:reg7|dataOut[1],    ;
+;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[1], DPRF:dprf|Register:reg11|dataOut[1],   ;
+;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[1], DPRF:dprf|Register:reg15|dataOut[1]   ;
 ; DataMemory:datamem|key_reg[4]  ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[4], DPRF:dprf|Register:reg3|dataOut[4],    ;
 ;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[4], DPRF:dprf|Register:reg7|dataOut[4],    ;
 ;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[4], DPRF:dprf|Register:reg11|dataOut[4],   ;
@@ -724,6 +720,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[31], DPRF:dprf|Register:reg7|dataOut[31],  ;
 ;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[31], DPRF:dprf|Register:reg11|dataOut[31], ;
 ;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[31], DPRF:dprf|Register:reg15|dataOut[31] ;
+; Controller:ctrl|rd[0]          ; Stuck at GND              ; DPRF:dprf|Register:reg1|dataOut[2], DPRF:dprf|Register:reg3|dataOut[2],    ;
+;                                ; due to stuck port data_in ; DPRF:dprf|Register:reg5|dataOut[2], DPRF:dprf|Register:reg7|dataOut[2],    ;
+;                                ;                           ; DPRF:dprf|Register:reg9|dataOut[2], DPRF:dprf|Register:reg11|dataOut[2],   ;
+;                                ;                           ; DPRF:dprf|Register:reg13|dataOut[2], DPRF:dprf|Register:reg15|dataOut[2]   ;
 +--------------------------------+---------------------------+----------------------------------------------------------------------------+
 
 
@@ -732,12 +732,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 426   ;
+; Total registers                              ; 394   ;
 ; Number of registers using Synchronous Clear  ; 2     ;
-; Number of registers using Synchronous Load   ; 32    ;
+; Number of registers using Synchronous Load   ; 30    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 334   ;
+; Number of registers using Clock Enable       ; 304   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -757,22 +757,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Project2|Register:pc|dataOut[0]               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg0|dataOut[23]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg2|dataOut[23]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg4|dataOut[10]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg6|dataOut[30]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg8|dataOut[7]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg10|dataOut[2]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg12|dataOut[12] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg14|dataOut[21] ;
-; 64:1               ; 14 bits   ; 588 LEs       ; 84 LEs               ; 504 LEs                ; Yes        ; |Project2|ALU:alu|out[5]                       ;
-; 64:1               ; 16 bits   ; 672 LEs       ; 112 LEs              ; 560 LEs                ; Yes        ; |Project2|ALU:alu|out[16]                      ;
-; 4:1                ; 22 bits   ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; No         ; |Project2|regIn[11]                            ;
-; 8:1                ; 32 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |Project2|DPRF:dprf|Mux4                       ;
-; 16:1               ; 32 bits   ; 320 LEs       ; 192 LEs              ; 128 LEs                ; No         ; |Project2|DPRF:dprf|Mux33                      ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |Project2|regIn[7]                             ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Project2|regIn[1]                             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Project2|Register:pc|dataOut[1]               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg0|dataOut[9]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg2|dataOut[1]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg4|dataOut[7]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg6|dataOut[20]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg8|dataOut[20]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg10|dataOut[27] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg12|dataOut[16] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Project2|DPRF:dprf|Register:reg14|dataOut[6]  ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |Project2|DPRF:dprf|Mux25                      ;
+; 4:1                ; 22 bits   ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; No         ; |Project2|regIn[27]                            ;
+; 16:1               ; 32 bits   ; 320 LEs       ; 192 LEs              ; 128 LEs                ; No         ; |Project2|DPRF:dprf|Mux40                      ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |Project2|regIn[5]                             ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Project2|regIn[0]                             ;
+; 64:1               ; 14 bits   ; 588 LEs       ; 112 LEs              ; 476 LEs                ; No         ; |Project2|ALU:alu|Mux18                        ;
+; 64:1               ; 16 bits   ; 672 LEs       ; 128 LEs              ; 544 LEs                ; No         ; |Project2|ALU:alu|Mux5                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 
 
@@ -1663,7 +1663,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Oct 25 21:35:39 2015
+    Info: Processing started: Sun Oct 25 22:08:57 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project2 -c Project2
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file signextension.v
@@ -1762,6 +1762,7 @@ Info (12128): Elaborating entity "SignExtension" for hierarchy "Controller:ctrl|
 Info (12128): Elaborating entity "DPRF" for hierarchy "DPRF:dprf"
 Info (12128): Elaborating entity "Register" for hierarchy "DPRF:dprf|Register:reg0"
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu"
+Warning (10270): Verilog HDL Case Statement warning at ALU.v(13): incomplete case statement has no default case item
 Info (12128): Elaborating entity "DataMemory" for hierarchy "DataMemory:datamem"
 Warning (10230): Verilog HDL assignment warning at DataMemory.v(39): truncated value with size 12 to match size of target (11)
 Info (286030): Timing-Driven Synthesis is running
@@ -1814,15 +1815,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (144001): Generated suppressed messages file C:/Users/Fawks/Documents/cs3220/Project2/SCProcLukeStubbs/Project2.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1456 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1436 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 46 output pins
-    Info (21061): Implemented 1361 logic cells
+    Info (21061): Implemented 1341 logic cells
     Info (21064): Implemented 33 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
     Info: Peak virtual memory: 512 megabytes
-    Info: Processing ended: Sun Oct 25 21:35:47 2015
+    Info: Processing ended: Sun Oct 25 22:09:05 2015
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:07
 
